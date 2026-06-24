@@ -119,7 +119,12 @@ body[data-lang="th"] .dot .lbl{font-family:'Noto Sans Thai',var(--mono)}
 .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);font-weight:700}
 body[data-lang="th"] .kicker{font-family:'Noto Sans Thai',var(--mono);letter-spacing:.04em;text-transform:none}
 h1,h2{font-family:var(--display);letter-spacing:-.025em;line-height:1.02;font-weight:700;color:var(--ink)}
-body[data-lang="th"] h1,body[data-lang="th"] h2{line-height:1.18}
+body[data-lang="th"] h1,body[data-lang="th"] h2{line-height:1.32}
+body[data-lang="th"] .role-top .ttl .name,body[data-lang="th"] .cell .k,body[data-lang="th"] .panel h3,
+body[data-lang="th"] .office h4,body[data-lang="th"] .qa .q,body[data-lang="th"] .step .st,
+body[data-lang="th"] .tier .role-n,body[data-lang="th"] .soc .h b{line-height:1.4}
+body[data-lang="th"] .badge,body[data-lang="th"] .role-top .tag,body[data-lang="th"] .role-perks span,
+body[data-lang="th"] .bring span,body[data-lang="th"] .langpills span,body[data-lang="th"] .wfh-langs span{line-height:1.5}
 em{font-style:italic;color:var(--pink);font-weight:600}
 body[data-lang="th"] em{font-style:normal}
 .lede{color:var(--muted);font-size:clamp(14px,2.6vw,16px);line-height:1.5;max-width:46ch;margin-top:14px}
@@ -154,18 +159,32 @@ body[data-lang="th"] .swipe{font-family:'Noto Sans Thai',var(--mono)}
 .swipe i{animation:bob 1.4s ease infinite;font-style:normal}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 
-.fab{position:fixed;right:18px;bottom:18px;z-index:450;display:inline-flex;align-items:center;gap:8px;
-  background:var(--pink);color:#fff;font-family:var(--display);font-weight:700;font-size:14px;padding:13px 18px;border-radius:100px;
-  box-shadow:0 12px 28px rgba(255,0,130,.34);opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .35s,transform .35s,background .2s}
-body[data-lang="th"] .fab{font-family:'Noto Sans Thai',var(--display)}
-.fab.on{opacity:1;transform:none;pointer-events:auto}
-.fab:hover{background:var(--pink-2)}
-.fab::before{content:"";width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 1.4s infinite}
-@media(min-width:1024px){.fab{right:64px;bottom:28px}}
+.fab-stack{position:fixed;right:16px;bottom:16px;z-index:450;display:flex;flex-direction:column;align-items:flex-end;gap:10px;
+  opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .35s,transform .35s}
+.fab-stack.on{opacity:1;transform:none;pointer-events:auto}
+.fab-btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-weight:700;font-size:14px;
+  padding:13px 18px;border-radius:100px;color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.16);white-space:nowrap;transition:transform .18s,filter .2s,background .2s}
+body[data-lang="th"] .fab-btn{font-family:'Noto Sans Thai',var(--display)}
+.fab-btn:active{transform:scale(.96)}
+.fab-btn svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
+.fab-btn .ms{font-size:20px}
+.fab-line{background:#06C755}
+.fab-line:hover{filter:brightness(1.06)}
+.fab-apply{background:var(--pink)}
+.fab-apply:hover{background:var(--pink-2)}
+.fab-apply::before{content:"";width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 1.4s infinite}
+.fab-top{width:44px;height:44px;border-radius:50%;background:#fff;color:var(--slate);border:1px solid var(--line-2);
+  box-shadow:0 8px 20px rgba(75,76,106,.18);display:grid;place-items:center;transition:background .2s,color .2s,transform .18s}
+.fab-top .ms{font-size:22px}
+.fab-top:active{transform:scale(.94)}
+.fab-top:hover{background:var(--paper);color:var(--pink)}
+@media(min-width:1024px){.fab-stack{right:28px;bottom:28px}}
+@media(max-width:380px){.fab-btn{font-size:12.5px;padding:11px 14px;gap:7px}}
 
 .s-hero{background:radial-gradient(120% 90% at 85% 0%,rgba(255,0,130,.07),transparent 55%),radial-gradient(120% 90% at 0% 100%,rgba(75,76,106,.06),transparent 55%),var(--bg)}
 .hero-h{font-size:clamp(44px,11vw,84px);margin-top:14px}
-body[data-lang="th"] .hero-h{font-size:clamp(34px,8.5vw,64px)}
+body[data-lang="th"] .hero-h{font-size:clamp(32px,8vw,60px);line-height:1.42}
+body[data-lang="th"] .hero-h .hl{padding:3px 12px;line-height:1.5}
 .hero-h .hl{background:var(--slate);color:#fff;padding:0 10px;border-radius:10px;display:inline-block;transform:rotate(-1.5deg)}
 .hero-h .pk{color:var(--pink)}
 .stamp{position:absolute;top:clamp(60px,12vw,90px);right:clamp(16px,6vw,70px);width:104px;height:104px;opacity:.92}
@@ -221,8 +240,9 @@ body[data-lang="th"] .role-top .tag{font-family:'Noto Sans Thai',var(--mono)}
 .role-top .tag.teal{background:var(--teal)}
 .role-top .chev{font-family:'Material Symbols Outlined';color:var(--slate-2);transition:transform .25s;font-size:22px}
 .role.open .chev{transform:rotate(180deg)}
-.role-body{max-height:0;overflow:hidden;transition:max-height .3s ease}
-.role.open .role-body{max-height:380px}
+.role-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s ease}
+.role.open .role-body{grid-template-rows:1fr}
+.role-body>.role-inner{overflow:hidden;min-height:0}
 .role-inner{padding:0 16px 16px}
 .role-inner p{font-size:13.5px;color:var(--muted);line-height:1.5}
 body[data-lang="th"] .role-inner p{line-height:1.65}
@@ -341,8 +361,9 @@ body[data-lang="th"] .switch .lab{font-family:'Noto Sans Thai',var(--mono)}
 .qa .q{display:flex;align-items:center;gap:10px;padding:15px 16px;cursor:pointer;font-family:var(--display);font-weight:600;font-size:14.5px;color:var(--ink)}
 .qa .q .ms{margin-left:auto;color:var(--slate-2);transition:transform .25s}
 .qa.open .q .ms{transform:rotate(45deg);color:var(--pink)}
-.qa .a{max-height:0;overflow:hidden;transition:max-height .3s ease}
-.qa.open .a{max-height:280px}
+.qa .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.qa.open .a{grid-template-rows:1fr}
+.qa .a>p{overflow:hidden;min-height:0}
 .qa .a p{padding:0 16px 16px;font-size:13px;color:var(--muted);line-height:1.55}
 body[data-lang="th"] .qa .a p{line-height:1.7}
 
@@ -439,7 +460,7 @@ body[data-lang="th"] .disc{line-height:1.65}
       <div class="cta-zone enter">
         <div class="cta-row">
           <a class="btn btn-primary" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="cta_view">View open roles</span> <span class="arr">→</span></a>
-          <a class="btn-ghost" href="https://line.me/R/ti/p/@tp_thailand" target="_blank" rel="noopener"><span class="ms">chat</span> <span data-i18n="cta_chat">Chat with us on LINE</span></a>
+          <a class="btn-ghost" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener"><span class="ms">chat</span> <span data-i18n="cta_chat">Chat with us on LINE</span></a>
         </div>
         <div class="swipe"><span data-i18n="swipe_explore">Scroll</span> <i>↓</i> <span data-i18n="swipe_explore2">explore</span></div>
       </div>
@@ -591,7 +612,7 @@ body[data-lang="th"] .disc{line-height:1.65}
           <h3 data-i18n="m1_h"><span class="ms">chat</span>Chat on LINE</h3>
           <div class="detail" data-i18n="m1_d1">The fastest way to reach us. Ask about roles, salary, shifts — anything. Reply in Thai or English.</div>
           <div class="cta-row" style="margin-top:12px">
-            <a class="btn-ghost" href="https://line.me/R/ti/p/@tp_thailand" target="_blank" rel="noopener"><span class="ms">chat</span><span data-i18n="m1_cta">Add us on LINE</span></a>
+            <a class="btn-ghost" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener"><span class="ms">chat</span><span data-i18n="m1_cta">Add us on LINE</span></a>
           </div>
         </div>
         <div class="panel">
@@ -675,9 +696,9 @@ body[data-lang="th"] .disc{line-height:1.65}
       <p class="lede enter" data-i18n="s9_lede">Behind-the-scenes, job updates, and life at TP Thailand.</p>
 
       <div class="social-row enter">
-        <a class="soc" href="https://line.me/R/ti/p/@tp_thailand" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.65 2 10.13c0 4.02 3.54 7.38 8.34 8.02.32.07.76.21.87.49.1.25.07.63.03.88l-.14.84c-.04.25-.2.98.86.53 1.05-.44 5.68-3.35 7.75-5.74 1.43-1.57 2.12-3.15 2.12-5.02C21.83 5.65 17.35 2 12 2z"/></svg><div class="h"><b>LINE</b><span>@tp_thailand</span></div></a>
-        <a class="soc" href="https://www.instagram.com/tp_thailand/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.72 3.72 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 0 0 1.38 2.13 5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg><div class="h"><b>Instagram</b><span>@tp_thailand</span></div></a>
-        <a class="soc" href="https://www.tiktok.com/@tp_thailand" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05 6.33 6.33 0 0 0-5.58 9.44A6.34 6.34 0 0 0 15.78 15.5V8.69a8.16 8.16 0 0 0 4.77 1.52V6.83a4.78 4.78 0 0 1-.96-.14z"/></svg><div class="h"><b>TikTok</b><span>@tp_thailand</span></div></a>
+        <a class="soc" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.65 2 10.13c0 4.02 3.54 7.38 8.34 8.02.32.07.76.21.87.49.1.25.07.63.03.88l-.14.84c-.04.25-.2.98.86.53 1.05-.44 5.68-3.35 7.75-5.74 1.43-1.57 2.12-3.15 2.12-5.02C21.83 5.65 17.35 2 12 2z"/></svg><div class="h"><b>LINE</b><span>@286nmdsd</span></div></a>
+        <a class="soc" href="https://www.instagram.com/tp_malaysia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.72 3.72 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 0 0 1.38 2.13 5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg><div class="h"><b>Instagram</b><span>@286nmdsd</span></div></a>
+        <a class="soc" href="https://www.tiktok.com/@tp_malaysia" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05 6.33 6.33 0 0 0-5.58 9.44A6.34 6.34 0 0 0 15.78 15.5V8.69a8.16 8.16 0 0 0 4.77 1.52V6.83a4.78 4.78 0 0 1-.96-.14z"/></svg><div class="h"><b>TikTok</b><span>@286nmdsd</span></div></a>
         <a class="soc" href="https://www.linkedin.com/company/teleperformance" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg><div class="h"><b>LinkedIn</b><span>Teleperformance</span></div></a>
       </div>
 
@@ -734,7 +755,7 @@ body[data-lang="th"] .disc{line-height:1.65}
       <div class="cta-zone enter">
         <div class="cta-row">
           <a class="btn btn-primary" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="cta_apply">Apply now</span> <span class="arr">→</span></a>
-          <a class="btn-ghost" href="https://line.me/R/ti/p/@tp_thailand" target="_blank" rel="noopener"><span class="ms">chat</span><span data-i18n="cta_chat2">Chat on LINE</span></a>
+          <a class="btn-ghost" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener"><span class="ms">chat</span><span data-i18n="cta_chat2">Chat on LINE</span></a>
         </div>
       </div>
 
@@ -751,9 +772,9 @@ body[data-lang="th"] .disc{line-height:1.65}
           <a href="https://tpmyandtpth.github.io/KLP/" target="_blank" rel="noopener" lang="ko">한국어</a>
         </div>
         <div class="foot-socials">
-          <a href="https://line.me/R/ti/p/@tp_thailand" target="_blank" rel="noopener" aria-label="LINE"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.65 2 10.13c0 4.02 3.54 7.38 8.34 8.02.32.07.76.21.87.49.1.25.07.63.03.88l-.14.84c-.04.25-.2.98.86.53 1.05-.44 5.68-3.35 7.75-5.74 1.43-1.57 2.12-3.15 2.12-5.02C21.83 5.65 17.35 2 12 2z"/></svg></a>
-          <a href="https://www.instagram.com/tp_thailand/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.72 3.72 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 0 0 1.38 2.13 5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
-          <a href="https://www.tiktok.com/@tp_thailand" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05 6.33 6.33 0 0 0-5.58 9.44A6.34 6.34 0 0 0 15.78 15.5V8.69a8.16 8.16 0 0 0 4.77 1.52V6.83a4.78 4.78 0 0 1-.96-.14z"/></svg></a>
+          <a href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener" aria-label="LINE"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.65 2 10.13c0 4.02 3.54 7.38 8.34 8.02.32.07.76.21.87.49.1.25.07.63.03.88l-.14.84c-.04.25-.2.98.86.53 1.05-.44 5.68-3.35 7.75-5.74 1.43-1.57 2.12-3.15 2.12-5.02C21.83 5.65 17.35 2 12 2z"/></svg></a>
+          <a href="https://www.instagram.com/tp_malaysia/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.72 3.72 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 0 0 1.38 2.13 5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+          <a href="https://www.tiktok.com/@tp_malaysia" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05 6.33 6.33 0 0 0-5.58 9.44A6.34 6.34 0 0 0 15.78 15.5V8.69a8.16 8.16 0 0 0 4.77 1.52V6.83a4.78 4.78 0 0 1-.96-.14z"/></svg></a>
           <a href="https://www.linkedin.com/company/teleperformance" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a>
         </div>
         <p class="foot-legal" data-i18n="foot_legal">TP (formerly Teleperformance) is a global digital business services company across 100+ countries and 170+ languages.<br>© 2026 TP (Teleperformance SE). All rights reserved.</p>
@@ -764,7 +785,16 @@ body[data-lang="th"] .disc{line-height:1.65}
 
 </main>
 
-<a class="fab" id="fab" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener" data-i18n="fab">Apply</a>
+<div class="fab-stack" id="fabStack">
+  <a class="fab-btn fab-line" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.65 2 10.13c0 4.02 3.54 7.38 8.34 8.02.32.07.76.21.87.49.1.25.07.63.03.88l-.14.84c-.04.25-.2.98.86.53 1.05-.44 5.68-3.35 7.75-5.74 1.43-1.57 2.12-3.15 2.12-5.02C21.83 5.65 17.35 2 12 2z"/></svg>
+    <span data-i18n="fab_line">LINE Screening Bot</span>
+  </a>
+  <a class="fab-btn fab-apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener">
+    <span data-i18n="fab">Apply now</span>
+  </a>
+  <button class="fab-top" id="fabTop" aria-label="Back to top" title="Back to top"><span class="ms">arrow_upward</span></button>
+</div>
 
 <script>
 (function(){
@@ -774,7 +804,25 @@ body[data-lang="th"] .disc{line-height:1.65}
   var prog=document.getElementById('prog');
   var rail=document.getElementById('rail');
   var dotsBox=document.getElementById('dots');
-  var fab=document.getElementById('fab');
+  var fabStack=document.getElementById('fabStack');
+  var fabTop=document.getElementById('fabTop');
+
+  /* =========================================================
+     LINKS — single source of truth. Edit here and every
+     button / social icon across the page updates.
+     Leave a value as "" to hide that social icon entirely.
+  ========================================================= */
+  var CFG={
+    // Apply / job search (iCIMS)
+    APPLY:"https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=thailand",
+    // LINE screening bot — the floating "LINE Screening Bot" button + every "Chat on LINE" link.
+    // Currently your live LINE bot @286nmdsd. If the TH LINE bot has its own OA add-friend link, paste it here.
+    LINE:"https://line.me/R/ti/p/@286nmdsd",
+    // Social accounts (shared TPMYandTPTH handles).
+    INSTAGRAM:"https://www.instagram.com/tp_malaysia/",
+    TIKTOK:"https://www.tiktok.com/@tp_malaysia",
+    LINKEDIN:"https://www.linkedin.com/company/teleperformance"
+  };
 
   /* =========================================================
      THAI TRANSLATIONS  (English baseline lives in the HTML)
@@ -930,7 +978,8 @@ body[data-lang="th"] .disc{line-height:1.65}
     foot_also:"มีภาษาอื่น",
     foot_legal:"TP (เดิมชื่อ Teleperformance) เป็นบริษัทผู้ให้บริการดิจิทัลทางธุรกิจระดับโลก ครอบคลุมกว่า 100 ประเทศ และ 170 ภาษา<br>© 2026 TP (Teleperformance SE) สงวนลิขสิทธิ์",
     foot_disc:"หน้านี้เป็นข้อมูลภาพรวม เงื่อนไขอาจแตกต่างกันตามโครงการ / ภูมิภาค / กฎระเบียบ เงื่อนไขสุดท้ายยืนยันในจดหมายเสนองานและสัญญาจ้างงาน",
-    fab:"สมัคร"
+    fab:"สมัครเลย",
+    fab_line:"คัดกรองทาง LINE"
   };
 
   /* ---- dynamic viewport height ---- */
@@ -994,7 +1043,7 @@ body[data-lang="th"] .disc{line-height:1.65}
     activeIndex=i;
     railBars.forEach(function(b,idx){b.classList.toggle('done',idx<i);b.classList.toggle('now',idx===i);});
     navDots.forEach(function(d,idx){d.classList.toggle('on',idx===i);});
-    fab.classList.toggle('on', i>0 && i<screens.length-1);
+    fabStack.classList.toggle('on', i>0);
   }
   requestAnimationFrame(function(){setActive(0);});
 
@@ -1097,6 +1146,32 @@ body[data-lang="th"] .disc{line-height:1.65}
         window.open('https://t.me/share/url?url='+encodeURIComponent(pageUrl)+'&text='+encodeURIComponent(shareText),'_blank');
       }
     });
+  });
+
+  /* ---- back to top ---- */
+  fabTop.addEventListener('click',function(){stage.scrollTo({top:0,behavior:'smooth'});});
+
+  /* ---- wire all links from CFG (single source of truth) ---- */
+  function handleFromUrl(u){
+    if(!u) return '';
+    if(u.indexOf('line')>-1){var m=u.match(/@[\w.\-]+/);return m?m[0]:'LINE';}
+    if(u.indexOf('linkedin')>-1) return 'Teleperformance';
+    var seg=u.replace(/\/+$/,'').split('/').pop();
+    return seg.charAt(0)==='@'?seg:('@'+seg);
+  }
+  function wire(selector,url){
+    document.querySelectorAll(selector).forEach(function(a){
+      if(url){a.href=url;a.style.display='';}else{a.style.display='none';}
+    });
+  }
+  wire("a[href*='line.me'],a[href*='lin.ee']",CFG.LINE);
+  wire("a[href*='instagram.com']",CFG.INSTAGRAM);
+  wire("a[href*='tiktok.com']",CFG.TIKTOK);
+  wire("a[href*='linkedin.com']",CFG.LINKEDIN);
+  var fabApply=document.querySelector('.fab-apply'); if(fabApply) fabApply.href=CFG.APPLY;
+  // sync the small handle text under each social card in the Follow row
+  document.querySelectorAll('.social-row .soc').forEach(function(a){
+    var sp=a.querySelector('.h span'); if(sp) sp.textContent=handleFromUrl(a.getAttribute('href'));
   });
 
   /* ---- keyboard nav ---- */
