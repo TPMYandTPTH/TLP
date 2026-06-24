@@ -162,6 +162,7 @@ body[data-lang="th"] .swipe{font-family:'Noto Sans Thai',var(--mono)}
 .fab-stack{position:fixed;right:16px;bottom:16px;z-index:450;display:flex;flex-direction:column;align-items:flex-end;gap:10px;
   opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .35s,transform .35s}
 .fab-stack.on{opacity:1;transform:none;pointer-events:auto}
+.fab-row{display:flex;align-items:center;gap:8px}
 .fab-btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-weight:700;font-size:14px;
   padding:13px 18px;border-radius:100px;color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.16);white-space:nowrap;transition:transform .18s,filter .2s,background .2s}
 body[data-lang="th"] .fab-btn{font-family:'Noto Sans Thai',var(--display)}
@@ -203,16 +204,13 @@ body[data-lang="th"] .trust .g span{font-family:'Noto Sans Thai',var(--mono)}
 .loc-track::-webkit-scrollbar{display:none}
 .loc-card{flex:0 0 78%;max-width:330px;scroll-snap-align:center;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--paper);position:relative}
 @media(min-width:760px){.loc-card{flex:0 0 320px}}
-.loc-card .top{height:128px;display:flex;align-items:flex-end;padding:14px;background:linear-gradient(135deg,var(--slate),var(--slate-ink));color:#fff;position:relative}
-.loc-card:nth-child(2) .top{background:linear-gradient(135deg,#6A6B92,var(--slate))}
-.loc-card:nth-child(3) .top{background:linear-gradient(135deg,var(--pink),#B8005F)}
-.loc-card:nth-child(4) .top{background:linear-gradient(135deg,var(--teal),var(--teal-ink))}
-.loc-card:nth-child(5) .top{background:linear-gradient(135deg,var(--slate-ink),#1C1D2B)}
-.loc-card .flag{position:absolute;top:12px;right:12px;font-family:var(--mono);font-size:11px;background:rgba(255,255,255,.18);padding:4px 9px;border-radius:100px;backdrop-filter:blur(6px)}
+.loc-card .locmap{height:142px;position:relative;background:var(--paper-2);border-bottom:1px solid var(--line)}
+.loc-card .locmap iframe{width:100%;height:100%;border:0;display:block;pointer-events:none}
+.loc-card .flag{position:absolute;top:10px;left:10px;z-index:2;pointer-events:none;font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--slate);background:rgba(255,255,255,.93);padding:4px 10px;border-radius:100px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
 body[data-lang="th"] .loc-card .flag{font-family:'Noto Sans Thai',var(--mono)}
-.loc-card .city{font-family:var(--display);font-weight:700;font-size:20px;line-height:1.1}
-body[data-lang="th"] .loc-card .city{font-family:'Noto Sans Thai',var(--display)}
 .loc-card .body{padding:14px 16px 18px}
+.loc-card .city{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.15;color:var(--ink)}
+body[data-lang="th"] .loc-card .city{font-family:'Noto Sans Thai',var(--display);line-height:1.3}
 .loc-card .desc{font-size:13px;color:var(--muted);line-height:1.45}
 body[data-lang="th"] .loc-card .desc{line-height:1.6}
 .loc-card .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
@@ -224,7 +222,7 @@ body[data-lang="th"] .loc-card .meta span{font-family:'Noto Sans Thai',var(--mon
 .pip.on{background:var(--pink);width:18px;border-radius:4px}
 
 .s-roles{justify-content:flex-start}
-.roles{margin-top:16px;display:flex;flex-direction:column;gap:9px;overflow-y:auto;flex:0 1 auto;max-height:min(56vh,520px);padding-right:2px;-webkit-overflow-scrolling:touch}
+.roles{margin-top:16px;display:flex;flex-direction:column;gap:9px;overflow-y:auto;flex:0 1 auto;max-height:min(64vh,580px);padding:2px 2px 24px;-webkit-overflow-scrolling:touch}
 .roles::-webkit-scrollbar{width:5px}.roles::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:4px}
 .role{border:1px solid var(--line);border-radius:16px;background:var(--paper);overflow:hidden;transition:border-color .2s,background .2s}
 .role.open{border-color:var(--slate);background:#fff;box-shadow:0 10px 26px rgba(75,76,106,.08)}
@@ -243,7 +241,7 @@ body[data-lang="th"] .role-top .tag{font-family:'Noto Sans Thai',var(--mono)}
 .role-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s ease}
 .role.open .role-body{grid-template-rows:1fr}
 .role-body>.role-inner{overflow:hidden;min-height:0}
-.role-inner{padding:0 16px 16px}
+.role-inner{padding:2px 16px 18px}
 .role-inner p{font-size:13.5px;color:var(--muted);line-height:1.5}
 body[data-lang="th"] .role-inner p{line-height:1.65}
 .role-perks{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
@@ -258,7 +256,8 @@ body[data-lang="th"] .role-pay{font-family:'Noto Sans Thai',var(--base)}
 body[data-lang="th"] .role .apply{font-family:'Noto Sans Thai',var(--display)}
 .role .apply:hover{background:var(--pink-2)}
 
-.bento{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}
+.bento{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px;overflow-y:auto;max-height:min(66vh,600px);padding-right:2px}
+.bento::-webkit-scrollbar{width:5px}.bento::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:4px}
 @media(min-width:760px){.bento{grid-template-columns:repeat(3,1fr)}}
 .cell{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--paper);display:flex;flex-direction:column;gap:7px}
 .cell .ms{font-size:24px;color:var(--pink)}
@@ -271,6 +270,15 @@ body[data-lang="th"] .cell .v{line-height:1.6}
 .cell.pink .ms,.cell.pink .k{color:#fff}.cell.pink .v{color:rgba(255,255,255,.9)}
 .cell.teal{background:var(--teal);border-color:var(--teal)}
 .cell.teal .ms,.cell.teal .k{color:#fff}.cell.teal .v{color:rgba(255,255,255,.9)}
+.cell.refer{grid-column:1/-1;background:linear-gradient(135deg,var(--slate),var(--slate-ink));border-color:var(--slate);gap:6px}
+.cell.refer .ms{color:#fff}
+.cell.refer .k{color:#fff;font-size:16.5px}
+.cell.refer .v{color:rgba(255,255,255,.9);font-size:13px;line-height:1.55}
+.cell.refer .refer-amt{display:inline-block;color:#fff;background:var(--pink);padding:1px 9px;border-radius:7px;font-family:var(--display);font-weight:700;white-space:nowrap}
+.cell.refer .refer-link{display:inline-flex;align-items:center;gap:5px;margin-top:8px;font-family:var(--display);font-weight:700;font-size:13px;color:#fff;border:1px solid rgba(255,255,255,.45);padding:8px 15px;border-radius:100px;width:fit-content;transition:background .2s}
+body[data-lang="th"] .cell.refer .k,body[data-lang="th"] .cell.refer .refer-link{font-family:'Noto Sans Thai',var(--display)}
+.cell.refer .refer-link .ms{font-size:17px}
+.cell.refer .refer-link:hover{background:rgba(255,255,255,.14)}
 
 .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
 @media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
@@ -327,6 +335,8 @@ body[data-lang="th"] .tab{font-family:'Noto Sans Thai',var(--mono)}
 .tabpane{display:none;flex-direction:column;gap:10px}
 .tabpane.active{display:flex}
 .office{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--paper)}
+.office-map{height:172px;border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-bottom:12px;background:var(--paper-2)}
+.office-map iframe{width:100%;height:100%;border:0;display:block}
 .office h4{font-family:var(--display);font-weight:600;font-size:15.5px;color:var(--ink);display:flex;align-items:center;gap:7px}
 .office h4 .ms{color:var(--pink);font-size:18px}
 .office p{font-size:12.5px;color:var(--muted);line-height:1.45;margin-top:5px}
@@ -475,21 +485,41 @@ body[data-lang="th"] .disc{line-height:1.65}
       <p class="lede enter" data-i18n="s2_lede">Swipe to explore. Bangkok — temples, street food, riverside and skyline.</p>
 
       <div class="loc-track enter" id="locTrack">
-        <div class="loc-card"><div class="top"><span class="flag" data-i18n="s2_c1_flag">🇹🇭 HQ</span><span class="city" data-i18n="s2_c1_city">Bangkok</span></div>
-          <div class="body"><div class="desc" data-i18n="s2_c1_desc">TP office in the heart of the city — BTS-connected and easy to reach.</div>
-            <div class="meta"><span><span class="ms">train</span><span data-i18n="s2_c1_m1">BTS</span></span><span><span class="ms">apartment</span><span data-i18n="s2_c1_m2">City centre</span></span></div></div></div>
-        <div class="loc-card"><div class="top"><span class="flag" data-i18n="s2_c2_flag">Transit</span><span class="city" data-i18n="s2_c2_city">BTS Skytrain</span></div>
-          <div class="body"><div class="desc" data-i18n="s2_c2_desc">Get to work above the traffic. Fast, cool and on time.</div>
-            <div class="meta"><span><span class="ms">schedule</span><span data-i18n="s2_c2_m1">On time</span></span></div></div></div>
-        <div class="loc-card"><div class="top"><span class="flag" data-i18n="s2_c3_flag">Weekends</span><span class="city" data-i18n="s2_c3_city">Chatuchak</span></div>
-          <div class="body"><div class="desc" data-i18n="s2_c3_desc">The world's biggest weekend market — 15,000 stalls of everything.</div>
-            <div class="meta"><span><span class="ms">shopping_bag</span><span data-i18n="s2_c3_m1">Market</span></span></div></div></div>
-        <div class="loc-card"><div class="top"><span class="flag" data-i18n="s2_c4_flag">Riverside</span><span class="city" data-i18n="s2_c4_city">Chao Phraya</span></div>
-          <div class="body"><div class="desc" data-i18n="s2_c4_desc">River of kings — ferries, temples and riverside cafés.</div>
-            <div class="meta"><span><span class="ms">directions_boat</span><span data-i18n="s2_c4_m1">Ferries</span></span><span><span class="ms">temple_buddhist</span><span data-i18n="s2_c4_m2">Temples</span></span></div></div></div>
-        <div class="loc-card"><div class="top"><span class="flag" data-i18n="s2_c5_flag">Food</span><span class="city" data-i18n="s2_c5_city">Street food</span></div>
-          <div class="body"><div class="desc" data-i18n="s2_c5_desc">From pad kra pao to night markets — the best food capital in Asia.</div>
-            <div class="meta"><span><span class="ms">ramen_dining</span><span data-i18n="s2_c5_m1">Hawker</span></span></div></div></div>
+        <div class="loc-card">
+          <div class="locmap"><span class="flag" data-i18n="s2_c1_flag">🇹🇭 HQ</span>
+            <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bangkok" src="https://www.google.com/maps?q=Bangkok%2C%20Thailand&z=11&output=embed"></iframe></div>
+          <div class="body"><div class="city" data-i18n="s2_c1_city">Bangkok</div>
+            <div class="desc" data-i18n="s2_c1_desc">TP office in the heart of the city — BTS-connected and easy to reach.</div>
+            <div class="meta"><span><span class="ms">train</span><span data-i18n="s2_c1_m1">BTS</span></span><span><span class="ms">apartment</span><span data-i18n="s2_c1_m2">City centre</span></span></div></div>
+        </div>
+        <div class="loc-card">
+          <div class="locmap"><span class="flag" data-i18n="s2_c2_flag">Transit</span>
+            <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="BTS Skytrain" src="https://www.google.com/maps?q=Siam%20BTS%20Station%2C%20Bangkok&z=14&output=embed"></iframe></div>
+          <div class="body"><div class="city" data-i18n="s2_c2_city">BTS Skytrain</div>
+            <div class="desc" data-i18n="s2_c2_desc">Get to work above the traffic. Fast, cool and on time.</div>
+            <div class="meta"><span><span class="ms">schedule</span><span data-i18n="s2_c2_m1">On time</span></span></div></div>
+        </div>
+        <div class="loc-card">
+          <div class="locmap"><span class="flag" data-i18n="s2_c3_flag">Weekends</span>
+            <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Chatuchak" src="https://www.google.com/maps?q=Chatuchak%20Weekend%20Market%2C%20Bangkok&z=14&output=embed"></iframe></div>
+          <div class="body"><div class="city" data-i18n="s2_c3_city">Chatuchak</div>
+            <div class="desc" data-i18n="s2_c3_desc">The world's biggest weekend market — 15,000 stalls of everything.</div>
+            <div class="meta"><span><span class="ms">shopping_bag</span><span data-i18n="s2_c3_m1">Market</span></span></div></div>
+        </div>
+        <div class="loc-card">
+          <div class="locmap"><span class="flag" data-i18n="s2_c4_flag">Riverside</span>
+            <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Chao Phraya" src="https://www.google.com/maps?q=Chao%20Phraya%20River%2C%20Bangkok&z=13&output=embed"></iframe></div>
+          <div class="body"><div class="city" data-i18n="s2_c4_city">Chao Phraya</div>
+            <div class="desc" data-i18n="s2_c4_desc">River of kings — ferries, temples and riverside cafés.</div>
+            <div class="meta"><span><span class="ms">directions_boat</span><span data-i18n="s2_c4_m1">Ferries</span></span><span><span class="ms">temple_buddhist</span><span data-i18n="s2_c4_m2">Temples</span></span></div></div>
+        </div>
+        <div class="loc-card">
+          <div class="locmap"><span class="flag" data-i18n="s2_c5_flag">Food</span>
+            <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Street food" src="https://www.google.com/maps?q=Yaowarat%20Road%2C%20Bangkok&z=15&output=embed"></iframe></div>
+          <div class="body"><div class="city" data-i18n="s2_c5_city">Street food</div>
+            <div class="desc" data-i18n="s2_c5_desc">From pad kra pao to night markets — the best food capital in Asia.</div>
+            <div class="meta"><span><span class="ms">ramen_dining</span><span data-i18n="s2_c5_m1">Hawker</span></span></div></div>
+        </div>
       </div>
       <div class="pips enter" id="locPips"></div>
     </div>
@@ -579,6 +609,12 @@ body[data-lang="th"] .disc{line-height:1.65}
         <div class="cell" data-i18n="b4"><span class="ms">calendar_month</span><div class="k">Time Off</div><div class="v">Annual leave plus all Thai public holidays. Sick leave per Thai labour law.</div></div>
         <div class="cell" data-i18n="b5"><span class="ms">school</span><div class="k">Full Training</div><div class="v">2–6 weeks paid training before you start. GoFluent language programmes. No prior BPO experience needed.</div></div>
         <div class="cell teal" data-i18n="b6"><span class="ms">trending_up</span><div class="k">Career Growth</div><div class="v">Structured promotions every 12 months. Mentorship + leadership academies. Many team leads started frontline.</div></div>
+        <div class="cell refer">
+          <span class="ms">volunteer_activism</span>
+          <div class="k" data-i18n="b7_k">Boost your income — refer a friend</div>
+          <div class="v"><span data-i18n="b7_v1">Know someone great? When a friend you refer joins and passes probation, you earn up to</span> <b class="refer-amt" id="refAmt">฿10,000</b><span data-i18n="b7_v2">— paid straight to you.</span></div>
+          <a class="refer-link" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="b7_cta">Refer a friend</span> <span class="ms" aria-hidden="true">arrow_forward</span></a>
+        </div>
       </div>
     </div>
   </section>
@@ -638,28 +674,6 @@ body[data-lang="th"] .disc{line-height:1.65}
     </div>
   </section>
 
-  <!-- ============ 07 REFER A FRIEND ============ -->
-  <section class="screen s-raf" data-label="refer" data-label-th="แนะนำเพื่อน">
-    <div class="wrap">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s7_brand">refer a friend</span></span><span data-i18n="s7_head_r">§ earn a bonus</span></div>
-      <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s7_h">Refer a <em>friend</em>.</h2>
-      <p class="lede enter" data-i18n="s7_lede">Know someone who'd be great? When they pass probation, you earn a referral bonus.</p>
-      <div class="tiers enter">
-        <div class="tier" data-i18n="rt1"><div class="amt">Referral bonus</div><div class="role-n">Standard roles</div><div class="cond">after probation</div></div>
-        <div class="tier" data-i18n="rt2"><div class="amt">Referral bonus</div><div class="role-n">Specialist / bilingual</div><div class="cond">after probation</div></div>
-        <div class="tier top" data-i18n="rt3"><div class="crown">top</div><div class="amt">Referral bonus</div><div class="role-n">Hard-to-fill roles</div><div class="cond">after probation</div></div>
-      </div>
-      <div class="fine enter">
-        <div data-i18n="rf1"><span class="ms">payments</span>Single payment after your friend passes probation.</div>
-        <div data-i18n="rf2"><span class="ms">block</span>Previously-applied candidates and current TP employees are not eligible.</div>
-        <div data-i18n="rf3"><span class="ms">verified_user</span>Your friend must consent to sharing their info with TP for recruitment.</div>
-      </div>
-      <div class="cta-zone enter">
-        <a class="btn btn-teal" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="cta_refer">Start referring</span> <span class="arr">→</span></a>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ 08 OFFICES ============ -->
   <section class="screen" data-label="offices" data-label-th="ออฟฟิศ">
     <div class="wrap">
@@ -674,9 +688,12 @@ body[data-lang="th"] .disc{line-height:1.65}
 
       <div class="tabpanes enter">
         <div class="tabpane active" id="pane-bkk">
-          <div class="office" data-i18n="o_bkk"><h4><span class="ms">corporate_fare</span>Bangkok</h4>
-            <p>TP Thailand operations. BTS-connected, in a vibrant part of the city. Interviews by appointment.</p>
-            <div class="links"><a href="https://maps.google.com/?q=Teleperformance+Bangkok" target="_blank" rel="noopener"><span class="ms">open_in_new</span>Google Maps</a></div></div>
+          <div class="office">
+            <div class="office-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="TP Bangkok office" src="https://www.google.com/maps?q=Teleperformance%20Bangkok&z=12&output=embed"></iframe></div>
+            <div class="office-body" data-i18n="o_bkk"><h4><span class="ms">corporate_fare</span>Bangkok</h4>
+              <p>TP Thailand operations. BTS-connected, in a vibrant part of the city. Interviews by appointment.</p>
+              <div class="links"><a href="https://maps.google.com/?q=Teleperformance+Bangkok" target="_blank" rel="noopener"><span class="ms">open_in_new</span>Open in Google Maps</a></div></div>
+          </div>
         </div>
         <div class="tabpane" id="pane-wfh">
           <div class="office" data-i18n="o_wfh"><h4><span class="ms">home</span>Work From Home</h4>
@@ -748,13 +765,13 @@ body[data-lang="th"] .disc{line-height:1.65}
         <div class="share">
           <button class="sb" data-share="copy" style="border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff" data-i18n="sh_copy">🔗 copy link</button>
           <button class="sb" data-share="line" style="border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff" data-i18n="sh_line">💬 LINE</button>
-          <button class="sb" data-share="tg" style="border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff" data-i18n="sh_tg">✈️ Telegram</button>
         </div>
       </div>
 
       <div class="cta-zone enter">
         <div class="cta-row">
           <a class="btn btn-primary" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="cta_apply">Apply now</span> <span class="arr">→</span></a>
+          <a class="btn-ghost" id="lpHub" href="https://tpmyandtpth.github.io/LP/" target="_blank" rel="noopener"><span class="ms">grid_view</span><span data-i18n="cta_all">Browse all roles</span></a>
           <a class="btn-ghost" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener"><span class="ms">chat</span><span data-i18n="cta_chat2">Chat on LINE</span></a>
         </div>
       </div>
@@ -788,12 +805,14 @@ body[data-lang="th"] .disc{line-height:1.65}
 <div class="fab-stack" id="fabStack">
   <a class="fab-btn fab-line" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.65 2 10.13c0 4.02 3.54 7.38 8.34 8.02.32.07.76.21.87.49.1.25.07.63.03.88l-.14.84c-.04.25-.2.98.86.53 1.05-.44 5.68-3.35 7.75-5.74 1.43-1.57 2.12-3.15 2.12-5.02C21.83 5.65 17.35 2 12 2z"/></svg>
-    <span data-i18n="fab_line">LINE Screening Bot</span>
+    <span data-i18n="fab_line">Chat on LINE</span>
   </a>
-  <a class="fab-btn fab-apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener">
-    <span data-i18n="fab">Apply now</span>
-  </a>
-  <button class="fab-top" id="fabTop" aria-label="Back to top" title="Back to top"><span class="ms">arrow_upward</span></button>
+  <div class="fab-row">
+    <button class="fab-top" id="fabTop" aria-label="Back to top" title="Back to top"><span class="ms">arrow_upward</span></button>
+    <a class="fab-btn fab-apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener">
+      <span data-i18n="fab">Apply now</span><span class="ms" aria-hidden="true">arrow_forward</span>
+    </a>
+  </div>
 </div>
 
 <script>
@@ -815,9 +834,13 @@ body[data-lang="th"] .disc{line-height:1.65}
   var CFG={
     // Apply / job search (iCIMS)
     APPLY:"https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=thailand",
-    // LINE screening bot — the floating "LINE Screening Bot" button + every "Chat on LINE" link.
+    // LP hub — landing-page hub where ALL jobs live (used on the "Ready to start" buttons)
+    LP_HUB:"https://tpmyandtpth.github.io/LP/",
+    // LINE quick-apply / chat bot — the floating "Chat on LINE" button + every "Chat on LINE" link.
     // Currently your live LINE bot @286nmdsd. If the TH LINE bot has its own OA add-friend link, paste it here.
     LINE:"https://line.me/R/ti/p/@286nmdsd",
+    // Refer-a-friend headline amount shown inside Benefits. <-- REPLACE with the real Thai Baht figure.
+    REFERRAL_MAX:"฿10,000",
     // Social accounts (shared TPMYandTPTH handles).
     INSTAGRAM:"https://www.instagram.com/tp_malaysia/",
     TIKTOK:"https://www.tiktok.com/@tp_malaysia",
@@ -925,17 +948,10 @@ body[data-lang="th"] .disc{line-height:1.65}
     m4_d1:"พร้อมแล้ว? ส่งใบสมัครได้เลย ใช้เวลาประมาณ 5 นาที",
     m4_cta:"สมัครทาง iCIMS",
 
-    s7_brand:"แนะนำเพื่อน",
-    s7_head_r:"§ รับโบนัส",
-    s7_h:"แนะนำ<em>เพื่อน</em>",
-    s7_lede:"รู้จักใครที่เหมาะกับงานนี้? เมื่อเพื่อนของคุณผ่านช่วงทดลองงาน คุณจะได้รับโบนัสแนะนำ",
-    rt1:"<div class='amt'>โบนัสแนะนำ</div><div class='role-n'>ตำแหน่งทั่วไป</div><div class='cond'>หลังผ่านทดลองงาน</div>",
-    rt2:"<div class='amt'>โบนัสแนะนำ</div><div class='role-n'>ตำแหน่งเฉพาะทาง / สองภาษา</div><div class='cond'>หลังผ่านทดลองงาน</div>",
-    rt3:"<div class='crown'>สูงสุด</div><div class='amt'>โบนัสแนะนำ</div><div class='role-n'>ตำแหน่งหายาก</div><div class='cond'>หลังผ่านทดลองงาน</div>",
-    rf1:"<span class='ms'>payments</span>จ่ายครั้งเดียวหลังเพื่อนของคุณผ่านช่วงทดลองงาน",
-    rf2:"<span class='ms'>block</span>ผู้ที่เคยสมัครแล้วและพนักงาน TP ปัจจุบันไม่มีสิทธิ์",
-    rf3:"<span class='ms'>verified_user</span>เพื่อนของคุณต้องยินยอมให้แชร์ข้อมูลกับ TP เพื่อการสรรหา",
-    cta_refer:"เริ่มแนะนำเพื่อน",
+    b7_k:"เพิ่มรายได้ — แนะนำเพื่อน",
+    b7_v1:"รู้จักคนเก่งๆ ไหม? เมื่อเพื่อนที่คุณแนะนำเข้าทำงานและผ่านช่วงทดลองงาน คุณรับสูงสุด",
+    b7_v2:"— จ่ายตรงถึงคุณ",
+    b7_cta:"แนะนำเพื่อน",
 
     s8_brand:"ออฟฟิศ",
     s8_head_r:"§ เปิดในแผนที่",
@@ -943,7 +959,7 @@ body[data-lang="th"] .disc{line-height:1.65}
     s8_lede:"คลิกเพื่อเปิดใน Google Maps",
     tab_bkk:"🇹🇭 กรุงเทพฯ",
     tab_wfh:"🏠 ทำงานจากที่บ้าน",
-    o_bkk:"<h4><span class='ms'>corporate_fare</span>กรุงเทพฯ</h4><p>ศูนย์ปฏิบัติการ TP ประเทศไทย เชื่อมต่อ BTS ในย่านที่มีชีวิตชีวา สัมภาษณ์โดยนัดหมาย</p><div class='links'><a href='https://maps.google.com/?q=Teleperformance+Bangkok' target='_blank' rel='noopener'><span class='ms'>open_in_new</span>Google Maps</a></div>",
+    o_bkk:"<h4><span class='ms'>corporate_fare</span>กรุงเทพฯ</h4><p>ศูนย์ปฏิบัติการ TP ประเทศไทย เชื่อมต่อ BTS ในย่านที่มีชีวิตชีวา สัมภาษณ์โดยนัดหมาย</p><div class='links'><a href='https://maps.google.com/?q=Teleperformance+Bangkok' target='_blank' rel='noopener'><span class='ms'>open_in_new</span>เปิดใน Google Maps</a></div>",
     o_wfh:"<h4><span class='ms'>home</span>ทำงานจากที่บ้าน</h4><p>บางตำแหน่งทำงานจากที่บ้านได้เต็มรูปแบบภายในประเทศไทย มีอุปกรณ์ให้ สวัสดิการเหมือนกัน</p><div class='wfh-langs'><span>ภาษาไทย</span><span>ภาษาอังกฤษ</span></div><div class='links' style='margin-top:12px'><a href='https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=remote' target='_blank' rel='noopener'><span class='ms'>work</span>ดูตำแหน่ง WFH</a></div>",
 
     s9_brand:"ติดตามเรา",
@@ -970,8 +986,9 @@ body[data-lang="th"] .disc{line-height:1.65}
     fc_top:"TP · ประเทศไทย · ตำแหน่งภาษาไทยและอังกฤษ",
     fc_h:"ที่นี่รอ<em>คุณ</em>อยู่",
     fc_k1:"สถานที่", fc_k2:"ตำแหน่ง", fc_k3:"สมัครใน", fc_v3:"~5 นาที", fc_k4:"พูดคุยทาง",
-    sh_copy:"🔗 คัดลอกลิงก์", sh_line:"💬 LINE", sh_tg:"✈️ Telegram",
+    sh_copy:"🔗 คัดลอกลิงก์", sh_line:"💬 LINE",
     cta_apply:"สมัครเลย",
+    cta_all:"ดูตำแหน่งงานทั้งหมด",
     cta_chat2:"พูดคุยทาง LINE",
     aw1:"🏆 ได้รับการรับรอง Great Place to Work®",
     aw2:"🏆 World's Best Workplaces™",
@@ -979,7 +996,7 @@ body[data-lang="th"] .disc{line-height:1.65}
     foot_legal:"TP (เดิมชื่อ Teleperformance) เป็นบริษัทผู้ให้บริการดิจิทัลทางธุรกิจระดับโลก ครอบคลุมกว่า 100 ประเทศ และ 170 ภาษา<br>© 2026 TP (Teleperformance SE) สงวนลิขสิทธิ์",
     foot_disc:"หน้านี้เป็นข้อมูลภาพรวม เงื่อนไขอาจแตกต่างกันตามโครงการ / ภูมิภาค / กฎระเบียบ เงื่อนไขสุดท้ายยืนยันในจดหมายเสนองานและสัญญาจ้างงาน",
     fab:"สมัครเลย",
-    fab_line:"คัดกรองทาง LINE"
+    fab_line:"แชททาง LINE"
   };
 
   /* ---- dynamic viewport height ---- */
@@ -1091,7 +1108,13 @@ body[data-lang="th"] .disc{line-height:1.65}
     r.querySelector('.role-top').addEventListener('click',function(){
       var open=r.classList.contains('open');
       document.querySelectorAll('#roles .role').forEach(function(x){x.classList.remove('open');});
-      if(!open) r.classList.add('open');
+      if(!open){
+        r.classList.add('open');
+        setTimeout(function(){
+          var box=document.getElementById('roles'), rt=r.getBoundingClientRect(), bt=box.getBoundingClientRect();
+          if(rt.bottom>bt.bottom||rt.top<bt.top) box.scrollTop+=(rt.bottom-bt.bottom)+14;
+        },340);
+      }
     });
   });
 
@@ -1169,6 +1192,8 @@ body[data-lang="th"] .disc{line-height:1.65}
   wire("a[href*='tiktok.com']",CFG.TIKTOK);
   wire("a[href*='linkedin.com']",CFG.LINKEDIN);
   var fabApply=document.querySelector('.fab-apply'); if(fabApply) fabApply.href=CFG.APPLY;
+  var refAmt=document.getElementById('refAmt'); if(refAmt) refAmt.textContent=CFG.REFERRAL_MAX;
+  var lpHub=document.getElementById('lpHub'); if(lpHub) lpHub.href=CFG.LP_HUB;
   // sync the small handle text under each social card in the Follow row
   document.querySelectorAll('.social-row .soc').forEach(function(a){
     var sp=a.querySelector('.h span'); if(sp) sp.textContent=handleFromUrl(a.getAttribute('href'));
