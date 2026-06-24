@@ -10,13 +10,14 @@
 <meta property="og:description" content="Thai & English roles in Bangkok. Paid training, visa support, medical from day one. Apply in 5 minutes.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tpmyandtpth.github.io/TLP/">
-<meta property="og:image" content="https://tpmyandtpth.github.io/photos/TPLogo11.png">
+<meta property="og:image" content="https://tpmyandtpth.github.io/TLP/TPLogo.png">
 <meta property="og:site_name" content="TP Careers Thailand">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="TP Careers Thailand">
 <meta name="twitter:description" content="Thai & English roles in Bangkok. Full benefits. Apply now.">
-<meta name="twitter:image" content="https://tpmyandtpth.github.io/photos/TPLogo11.png">
-<link rel="icon" href="https://tpmyandtpth.github.io/TPLogo11.png" type="image/png">
+<meta name="twitter:image" content="https://tpmyandtpth.github.io/TLP/TPLogo.png">
+<link rel="icon" href="TPLogo.png" type="image/png">
+<link rel="apple-touch-icon" href="TPLogo.png">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4R7DXXGK3"></script>
@@ -112,6 +113,7 @@ body[data-lang="th"] .dot .lbl{font-family:'Noto Sans Thai',var(--mono)}
   font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.02em;margin-bottom:18px}
 .scr-head .brand{display:flex;align-items:center;gap:7px;font-family:var(--display);font-weight:700;color:var(--ink);font-size:14px}
 .scr-head .brand .logo{display:inline-grid;place-items:center;width:26px;height:22px;border-radius:6px;background:var(--slate);color:#fff;font-size:12px;font-weight:700}
+.scr-head .brand .logo-img{height:26px;width:auto;display:block;object-fit:contain}
 .scr-head .brand small{font-family:var(--mono);font-weight:400;color:var(--muted);font-size:11px}
 .scr-head .dot-live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--teal);margin-right:6px;animation:pulse 1.6s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,175,155,.45)}50%{box-shadow:0 0 0 6px rgba(0,175,155,0)}}
@@ -222,7 +224,8 @@ body[data-lang="th"] .loc-card .meta span{font-family:'Noto Sans Thai',var(--mon
 .pip.on{background:var(--pink);width:18px;border-radius:4px}
 
 .s-roles{justify-content:flex-start}
-.roles{margin-top:16px;display:flex;flex-direction:column;gap:9px;overflow-y:auto;flex:0 1 auto;max-height:min(64vh,580px);padding:2px 2px 24px;-webkit-overflow-scrolling:touch}
+.s-roles>.wrap{flex:1;width:100%}
+.roles{margin-top:14px;display:flex;flex-direction:column;gap:9px;overflow-y:auto;flex:1 1 auto;min-height:0;padding:2px 2px 16px;-webkit-overflow-scrolling:touch}
 .roles::-webkit-scrollbar{width:5px}.roles::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:4px}
 .role{border:1px solid var(--line);border-radius:16px;background:var(--paper);overflow:hidden;transition:border-color .2s,background .2s}
 .role.open{border-color:var(--slate);background:#fff;box-shadow:0 10px 26px rgba(75,76,106,.08)}
@@ -255,6 +258,10 @@ body[data-lang="th"] .role-pay{font-family:'Noto Sans Thai',var(--base)}
 .role .apply{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-family:var(--display);font-weight:600;font-size:13px;color:#fff;background:var(--pink);padding:9px 16px;border-radius:100px}
 body[data-lang="th"] .role .apply{font-family:'Noto Sans Thai',var(--display)}
 .role .apply:hover{background:var(--pink-2)}
+.roles-all{display:inline-flex;align-items:center;gap:7px;margin-top:14px;align-self:center;font-family:var(--display);font-weight:600;font-size:13px;color:var(--pink);border:1px solid rgba(255,0,130,.3);background:rgba(255,0,130,.05);padding:9px 16px;border-radius:100px;flex-shrink:0}
+.roles-all:hover{background:rgba(255,0,130,.1)}
+.roles-all .ms{font-size:16px}
+body[data-lang="th"] .roles-all{font-family:'Noto Sans Thai',var(--display)}
 
 .bento{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px;overflow-y:auto;max-height:min(66vh,600px);padding-right:2px}
 .bento::-webkit-scrollbar{width:5px}.bento::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:4px}
@@ -440,7 +447,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   <section class="screen s-hero" data-label="home" data-label-th="หน้าแรก">
     <div class="wrap">
       <div class="scr-head enter">
-        <span class="brand" data-i18n="s1_brand"><span class="logo">TP</span> Careers <small>Thailand</small></span>
+        <span class="brand" data-i18n="s1_brand"><img class="logo-img" src="TPLogo.png" alt="TP"> Careers <small>Thailand</small></span>
         <span data-i18n="s1_head_r"><span class="dot-live"></span>now hiring</span>
       </div>
 
@@ -469,7 +476,7 @@ body[data-lang="th"] .disc{line-height:1.65}
 
       <div class="cta-zone enter">
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="cta_view">View open roles</span> <span class="arr">→</span></a>
+          <a class="btn btn-primary" href="https://tpmyandtpth.github.io/LP/" target="_blank" rel="noopener"><span data-i18n="cta_view">View all open roles</span> <span class="arr">→</span></a>
           <a class="btn-ghost" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener"><span class="ms">chat</span> <span data-i18n="cta_chat">Chat with us on LINE</span></a>
         </div>
         <div class="swipe"><span data-i18n="swipe_explore">Scroll</span> <i>↓</i> <span data-i18n="swipe_explore2">explore</span></div>
@@ -480,7 +487,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   <!-- ============ 02 LOCATIONS ============ -->
   <section class="screen" data-label="locations" data-label-th="สถานที่">
     <div class="wrap">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s2_brand">locations</span></span><span data-i18n="s2_head_r">§ where you'll live</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s2_brand">locations</span></span><span data-i18n="s2_head_r">§ where you'll live</span></div>
       <h2 class="enter" style="font-size:clamp(30px,7vw,48px)" data-i18n="s2_h">Where you'll <em>live</em>.</h2>
       <p class="lede enter" data-i18n="s2_lede">Swipe to explore. Bangkok — temples, street food, riverside and skyline.</p>
 
@@ -528,7 +535,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   <!-- ============ 03 ROLES ============ -->
   <section class="screen s-roles" data-label="open roles" data-label-th="ตำแหน่งงาน">
     <div class="wrap" style="display:flex;flex-direction:column;min-height:0">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s3_brand">open roles</span></span><span data-i18n="s3_head_r">§ tap to open</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s3_brand">open roles</span></span><span data-i18n="s3_head_r">§ tap to open</span></div>
       <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s3_h">Open <em>roles</em>.</h2>
       <p class="lede enter" style="margin-bottom:4px" data-i18n="s3_lede">Full training. Apply in 5 minutes.</p>
 
@@ -593,13 +600,14 @@ body[data-lang="th"] .disc{line-height:1.65}
           </div></div>
         </div>
       </div>
+      <a class="roles-all" href="https://tpmyandtpth.github.io/LP/" target="_blank" rel="noopener"><span class="ms">grid_view</span> <span data-i18n="roles_all">See all open roles on our jobs hub</span> <span class="ms">arrow_forward</span></a>
     </div>
   </section>
 
   <!-- ============ 04 BENEFITS ============ -->
   <section class="screen" data-label="benefits" data-label-th="สวัสดิการ">
     <div class="wrap">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s4_brand">benefits</span></span><span data-i18n="s4_head_r">§ what you get</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s4_brand">benefits</span></span><span data-i18n="s4_head_r">§ what you get</span></div>
       <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s4_h">What you <em>get</em>.</h2>
       <p class="lede enter" data-i18n="s4_lede">Full package, no hidden fine print. Final details land in your offer letter.</p>
       <div class="bento enter">
@@ -622,7 +630,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   <!-- ============ 05 PROCESS ============ -->
   <section class="screen" data-label="process" data-label-th="ขั้นตอน">
     <div class="wrap">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s5_brand">process</span></span><span data-i18n="s5_head_r">§ four steps</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s5_brand">process</span></span><span data-i18n="s5_head_r">§ four steps</span></div>
       <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s5_h">How it <em>works</em>.</h2>
       <p class="lede enter" data-i18n="s5_lede">Four steps. That's it.</p>
       <div class="steps enter">
@@ -640,7 +648,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   <!-- ============ 06 MEET US ============ -->
   <section class="screen" data-label="meet us" data-label-th="พบกับเรา">
     <div class="wrap">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s6_brand">meet us</span></span><span data-i18n="s6_head_r">§ online or in person</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s6_brand">meet us</span></span><span data-i18n="s6_head_r">§ online or in person</span></div>
       <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s6_h">Meet <em>us</em>.</h2>
       <p class="lede enter" data-i18n="s6_lede">Chat on LINE, join our weekly session, or visit us in Bangkok — your choice.</p>
       <div class="meet-grid enter">
@@ -677,7 +685,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   <!-- ============ 08 OFFICES ============ -->
   <section class="screen" data-label="offices" data-label-th="ออฟฟิศ">
     <div class="wrap">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s8_brand">offices</span></span><span data-i18n="s8_head_r">§ open in maps</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s8_brand">offices</span></span><span data-i18n="s8_head_r">§ open in maps</span></div>
       <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s8_h">Our <em>offices</em>.</h2>
       <p class="lede enter" data-i18n="s8_lede">Click to open in Google Maps.</p>
 
@@ -708,15 +716,16 @@ body[data-lang="th"] .disc{line-height:1.65}
   <!-- ============ 09 FOLLOW ============ -->
   <section class="screen" data-label="follow" data-label-th="ติดตามเรา">
     <div class="wrap">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s9_brand">follow us</span></span><span data-i18n="s9_head_r">§ life at TP</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s9_brand">follow us</span></span><span data-i18n="s9_head_r">§ life at TP</span></div>
       <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s9_h">Follow <em>us</em>.</h2>
       <p class="lede enter" data-i18n="s9_lede">Behind-the-scenes, job updates, and life at TP Thailand.</p>
 
       <div class="social-row enter">
-        <a class="soc" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.65 2 10.13c0 4.02 3.54 7.38 8.34 8.02.32.07.76.21.87.49.1.25.07.63.03.88l-.14.84c-.04.25-.2.98.86.53 1.05-.44 5.68-3.35 7.75-5.74 1.43-1.57 2.12-3.15 2.12-5.02C21.83 5.65 17.35 2 12 2z"/></svg><div class="h"><b>LINE</b><span>@286nmdsd</span></div></a>
-        <a class="soc" href="https://www.instagram.com/tp_malaysia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.72 3.72 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 0 0 1.38 2.13 5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg><div class="h"><b>Instagram</b><span>@286nmdsd</span></div></a>
-        <a class="soc" href="https://www.tiktok.com/@tp_malaysia" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05 6.33 6.33 0 0 0-5.58 9.44A6.34 6.34 0 0 0 15.78 15.5V8.69a8.16 8.16 0 0 0 4.77 1.52V6.83a4.78 4.78 0 0 1-.96-.14z"/></svg><div class="h"><b>TikTok</b><span>@286nmdsd</span></div></a>
-        <a class="soc" href="https://www.linkedin.com/company/teleperformance" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg><div class="h"><b>LinkedIn</b><span>Teleperformance</span></div></a>
+        <a class="soc" href="https://www.facebook.com/TPinThailand" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.5 0-1.96.93-1.96 1.89v2.25h3.34l-.53 3.49h-2.81V24C19.61 23.08 24 18.09 24 12.07z"/></svg><div class="h"><b>Facebook</b><span>TP Thailand</span></div></a>
+        <a class="soc" href="https://www.instagram.com/tpinthailand/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.72 3.72 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 0 0 1.38 2.13 5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg><div class="h"><b>Instagram</b><span>@tpinthailand</span></div></a>
+        <a class="soc" href="https://www.tiktok.com/@tpinthailand" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05 6.33 6.33 0 0 0-5.58 9.44A6.34 6.34 0 0 0 15.78 15.5V8.69a8.16 8.16 0 0 0 4.77 1.52V6.83a4.78 4.78 0 0 1-.96-.14z"/></svg><div class="h"><b>TikTok</b><span>@tpinthailand</span></div></a>
+        <a class="soc" href="https://www.youtube.com/@wearetpgroup" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2C0 8.08 0 12 0 12s0 3.92.5 5.8a3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg><div class="h"><b>YouTube</b><span>@wearetpgroup</span></div></a>
+        <a class="soc" href="https://www.linkedin.com/company/wearetpgroup" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg><div class="h"><b>LinkedIn</b><span>TP Group</span></div></a>
       </div>
 
       <div class="switch enter">
@@ -732,7 +741,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   <!-- ============ 10 FAQ ============ -->
   <section class="screen s-faq" data-label="faq" data-label-th="คำถาม">
     <div class="wrap" style="display:flex;flex-direction:column;min-height:0">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s10_brand">questions</span></span><span data-i18n="s10_head_r">§ tap to expand</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s10_brand">questions</span></span><span data-i18n="s10_head_r">§ tap to expand</span></div>
       <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s10_h"><em>Questions.</em></h2>
       <div class="faq enter" id="faq">
         <div class="qa open" data-i18n="q1"><div class="q">Do I need BPO experience?<span class="ms">add</span></div><div class="a"><p>No. We value language skills and communication. Full paid training — 2 to 6 weeks — before you handle any customer interactions.</p></div></div>
@@ -749,7 +758,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   <!-- ============ 11 FINAL ============ -->
   <section class="screen s-final" data-label="apply" data-label-th="สมัคร">
     <div class="wrap">
-      <div class="scr-head enter"><span class="brand"><span class="logo">TP</span> <span data-i18n="s11_brand">ready?</span></span><span data-i18n="s11_head_r">§ one application</span></div>
+      <div class="scr-head enter"><span class="brand"><img class="logo-img" src="TPLogo.png" alt="TP"> <span data-i18n="s11_brand">ready?</span></span><span data-i18n="s11_head_r">§ one application</span></div>
       <h2 class="enter" style="font-size:clamp(30px,8vw,52px)" data-i18n="s11_h">Ready to <em>start</em>?</h2>
       <p class="lede enter" data-i18n="s11_lede">One application. A career with a global team, right here in Bangkok.</p>
 
@@ -789,10 +798,11 @@ body[data-lang="th"] .disc{line-height:1.65}
           <a href="https://tpmyandtpth.github.io/KLP/" target="_blank" rel="noopener" lang="ko">한국어</a>
         </div>
         <div class="foot-socials">
-          <a href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener" aria-label="LINE"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.65 2 10.13c0 4.02 3.54 7.38 8.34 8.02.32.07.76.21.87.49.1.25.07.63.03.88l-.14.84c-.04.25-.2.98.86.53 1.05-.44 5.68-3.35 7.75-5.74 1.43-1.57 2.12-3.15 2.12-5.02C21.83 5.65 17.35 2 12 2z"/></svg></a>
-          <a href="https://www.instagram.com/tp_malaysia/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.72 3.72 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 0 0 1.38 2.13 5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
-          <a href="https://www.tiktok.com/@tp_malaysia" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05 6.33 6.33 0 0 0-5.58 9.44A6.34 6.34 0 0 0 15.78 15.5V8.69a8.16 8.16 0 0 0 4.77 1.52V6.83a4.78 4.78 0 0 1-.96-.14z"/></svg></a>
-          <a href="https://www.linkedin.com/company/teleperformance" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a>
+          <a href="https://www.facebook.com/TPinThailand" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.5 0-1.96.93-1.96 1.89v2.25h3.34l-.53 3.49h-2.81V24C19.61 23.08 24 18.09 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/tpinthailand/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.72 3.72 0 0 1-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91a5.88 5.88 0 0 0 1.38 2.13 5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+          <a href="https://www.tiktok.com/@tpinthailand" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05 6.33 6.33 0 0 0-5.58 9.44A6.34 6.34 0 0 0 15.78 15.5V8.69a8.16 8.16 0 0 0 4.77 1.52V6.83a4.78 4.78 0 0 1-.96-.14z"/></svg></a>
+          <a href="https://www.youtube.com/@wearetpgroup" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2C0 8.08 0 12 0 12s0 3.92.5 5.8a3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
+          <a href="https://www.linkedin.com/company/wearetpgroup" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a>
         </div>
         <p class="foot-legal" data-i18n="foot_legal">TP (formerly Teleperformance) is a global digital business services company across 100+ countries and 170+ languages.<br>© 2026 TP (Teleperformance SE). All rights reserved.</p>
         <p class="disc" data-i18n="foot_disc">This page is an overview. Conditions vary by project / region / regulations. Final conditions are confirmed in the offer letter and employment contract.</p>
@@ -841,10 +851,12 @@ body[data-lang="th"] .disc{line-height:1.65}
     LINE:"https://line.me/R/ti/p/@286nmdsd",
     // Refer-a-friend headline amount shown inside Benefits. <-- REPLACE with the real Thai Baht figure.
     REFERRAL_MAX:"฿10,000",
-    // Social accounts (shared TPMYandTPTH handles).
-    INSTAGRAM:"https://www.instagram.com/tp_malaysia/",
-    TIKTOK:"https://www.tiktok.com/@tp_malaysia",
-    LINKEDIN:"https://www.linkedin.com/company/teleperformance"
+    // Social accounts — TP Thailand + global (LinkedIn/YouTube under @wearetpgroup).
+    FACEBOOK:"https://www.facebook.com/TPinThailand",
+    INSTAGRAM:"https://www.instagram.com/tpinthailand/",
+    TIKTOK:"https://www.tiktok.com/@tpinthailand",
+    YOUTUBE:"https://www.youtube.com/@wearetpgroup",
+    LINKEDIN:"https://www.linkedin.com/company/wearetpgroup"
   };
 
   /* =========================================================
@@ -852,7 +864,7 @@ body[data-lang="th"] .disc{line-height:1.65}
      Have a native Thai speaker proof these before launch.
   ========================================================= */
   var TH={
-    s1_brand:"<span class='logo'>TP</span> ร่วมงาน <small>ประเทศไทย</small>",
+    s1_brand:"<img class='logo-img' src='TPLogo.png' alt='TP'> ร่วมงาน <small>ประเทศไทย</small>",
     s1_head_r:"<span class='dot-live'></span>กำลังรับสมัคร",
     s1_kicker:"กำลังเปิดรับสมัคร — ประเทศไทย",
     s1_h:"บทใหม่ของคุณ<br><span class='hl'>เริ่มต้น</span><br>ที่<span class='pk'>นี่</span>",
@@ -863,7 +875,7 @@ body[data-lang="th"] .disc{line-height:1.65}
     t_team:"พนักงาน",
     t_countries:"ประเทศ",
     t_langs:"ภาษา",
-    cta_view:"ดูตำแหน่งที่เปิดรับ",
+    cta_view:"ดูตำแหน่งงานทั้งหมด",
     cta_chat:"พูดคุยกับเราทาง LINE",
     swipe_explore:"เลื่อน",
     swipe_explore2:"เพื่อสำรวจ",
@@ -892,6 +904,7 @@ body[data-lang="th"] .disc{line-height:1.65}
     s3_head_r:"§ แตะเพื่อเปิด",
     s3_h:"ตำแหน่งที่<em>เปิดรับ</em>",
     s3_lede:"ฝึกอบรมเต็มรูปแบบ สมัครได้ใน 5 นาที",
+    roles_all:"ดูตำแหน่งงานทั้งหมดที่ศูนย์รวมงานของเรา",
     r1_ttl:"<div class='name'>เจ้าหน้าที่ฝ่ายบริการลูกค้า</div><div class='sub'><span class='ms'>translate</span>ภาษาไทย · <span class='ms'>location_on</span>กรุงเทพฯ</div>",
     r1_tag:"แชท &amp; โทร",
     r1_body:"<p>ให้บริการลูกค้าภาษาไทยให้กับแบรนด์ระดับโลก ผ่านแชท อีเมล และโทรศัพท์</p><div class='role-pay'><span class='ms'>payments</span>ค่าตอบแทนตามตลาดไทย <span class='det'>— เบี้ยกะ + โบนัสตามผลงาน</span></div><div class='role-perks'><span><span class='ms'>health_and_safety</span>ประกันสุขภาพ</span><span><span class='ms'>school</span>ฝึกอบรม</span><span><span class='ms'>trending_up</span>ก้าวหน้า</span></div><a class='apply' href='https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thai' target='_blank' rel='noopener'>สมัครเลย →</a>",
@@ -1177,8 +1190,10 @@ body[data-lang="th"] .disc{line-height:1.65}
   /* ---- wire all links from CFG (single source of truth) ---- */
   function handleFromUrl(u){
     if(!u) return '';
+    if(u.indexOf('facebook')>-1) return 'TP Thailand';
+    if(u.indexOf('linkedin')>-1) return 'TP Group';
+    if(u.indexOf('youtube')>-1){var y=u.match(/@[\w.\-]+/);return y?y[0]:'YouTube';}
     if(u.indexOf('line')>-1){var m=u.match(/@[\w.\-]+/);return m?m[0]:'LINE';}
-    if(u.indexOf('linkedin')>-1) return 'Teleperformance';
     var seg=u.replace(/\/+$/,'').split('/').pop();
     return seg.charAt(0)==='@'?seg:('@'+seg);
   }
@@ -1188,9 +1203,12 @@ body[data-lang="th"] .disc{line-height:1.65}
     });
   }
   wire("a[href*='line.me'],a[href*='lin.ee']",CFG.LINE);
+  wire("a[href*='facebook.com']",CFG.FACEBOOK);
   wire("a[href*='instagram.com']",CFG.INSTAGRAM);
   wire("a[href*='tiktok.com']",CFG.TIKTOK);
+  wire("a[href*='youtube.com']",CFG.YOUTUBE);
   wire("a[href*='linkedin.com']",CFG.LINKEDIN);
+  wire("a[href*='tpmyandtpth.github.io/LP']",CFG.LP_HUB);
   var fabApply=document.querySelector('.fab-apply'); if(fabApply) fabApply.href=CFG.APPLY;
   var refAmt=document.getElementById('refAmt'); if(refAmt) refAmt.textContent=CFG.REFERRAL_MAX;
   var lpHub=document.getElementById('lpHub'); if(lpHub) lpHub.href=CFG.LP_HUB;
