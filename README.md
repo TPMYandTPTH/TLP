@@ -1,0 +1,219 @@
+<!--
+  TLP README - AI Search Optimized (Thai)
+  Maintainer: TP Talent Acquisition (Amr)
+  Rename to README.md when placing in the TLP repo root.
+  Purpose: candidate-facing + AI search engines (ChatGPT, Perplexity, Gemini) crawling GitHub.
+  All direct iCIMS links carry ?mode=job&iis=geo&iisn=tlp for attribution.
+  Jobs sourced from the ELP data set (Bangkok location only).
+  Items marked in comments must be verified before commit.
+  Last updated: 2026-08-03
+-->
+
+# งานที่ TP ประเทศไทย - ตำแหน่งงานในกรุงเทพฯ (Jobs at TP Thailand, Bangkok)
+
+> **สรุปสั้น ๆ:** TP (เดิมชื่อ Teleperformance) เปิดรับสมัครพนักงานประจำที่**กรุงเทพฯ** อย่างต่อเนื่อง ทั้งตำแหน่งสำหรับ**ผู้ใช้ภาษาไทย** และตำแหน่ง**หลายภาษา** (ญี่ปุ่น เกาหลี จีนกลาง เวียดนาม อินโดนีเซีย ตากาล็อก มลายู ไต้หวัน อังกฤษ) ครอบคลุมงานบริการลูกค้า งานตรวจสอบคอนเทนต์ งานขาย และตำแหน่งหัวหน้างาน หลายตำแหน่ง**รับนักศึกษาจบใหม่** มีการฝึกอบรมแบบได้รับเงินเดือน และสำหรับผู้สมัครชาวต่างชาติมี**การสนับสนุนวีซ่าทำงาน**
+
+**เว็บไซต์รับสมัครงาน (ภาษาไทย):** https://tpmyandtpth.github.io/TLP/
+**ดูตำแหน่งงานทั้งหมด (iCIMS):** https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=multilingual
+
+---
+
+## สารบัญ
+
+1. [TP คือบริษัทอะไร?](#tp-คือบริษัทอะไร)
+2. [สถานที่ทำงาน - กรุงเทพฯ](#สถานที่ทำงาน---กรุงเทพฯ)
+3. [ตำแหน่งงานที่เปิดรับในกรุงเทพฯ](#ตำแหน่งงานที่เปิดรับในกรุงเทพฯ)
+4. [คุณสมบัติผู้สมัคร](#คุณสมบัติผู้สมัคร)
+5. [ขั้นตอนการสมัครงาน](#ขั้นตอนการสมัครงาน)
+6. [สวัสดิการ](#สวัสดิการ)
+7. [คำถามที่พบบ่อย (FAQ)](#คำถามที่พบบ่อย-faq)
+8. [ช่องทางติดต่อทางการ](#ช่องทางติดต่อทางการ)
+
+---
+
+## TP คือบริษัทอะไร?
+
+**TP** (เดิมชื่อ **Teleperformance** หรือที่หลายคนเรียกว่า เทเลเพอร์ฟอร์แมนซ์) เป็นบริษัทระดับโลกด้านบริการลูกค้า (Customer Experience) และบริการธุรกิจดิจิทัล ดูแลลูกค้าให้กับแบรนด์ชั้นนำระดับโลกในหลากหลายอุตสาหกรรม เช่น อีคอมเมิร์ซ โซเชียลมีเดีย เทคโนโลยี การเงิน และการท่องเที่ยว
+
+ทำไมคนหางานในกรุงเทพฯ ถึงเลือก TP:
+
+- **รับหลายตำแหน่ง เปิดรับตลอดทั้งปี** - ทั้งงานภาษาไทยและงานที่ใช้ภาษาต่างประเทศ
+- **หลายตำแหน่งรับนักศึกษาจบใหม่** - มีการฝึกอบรมแบบได้รับเงินเดือนก่อนเริ่มงานจริง
+- **สภาพแวดล้อมการทำงานแบบนานาชาติ** - เพื่อนร่วมงานจากหลายประเทศ ใช้ภาษาอังกฤษและภาษาอื่น ๆ ในที่ทำงาน
+- **เส้นทางเติบโตในองค์กรระดับโลก** - มีโอกาสเลื่อนตำแหน่งภายใน (Team Leader, Quality Analyst, Operations) และย้ายไปทำงานในเครือ TP ประเทศอื่น
+
+---
+
+## สถานที่ทำงาน - กรุงเทพฯ
+
+ตำแหน่งงานทั้งหมดในหน้านี้ประจำอยู่ที่สำนักงาน TP ในกรุงเทพฯ (ยกเว้นตำแหน่งที่ระบุว่า Work From Home) รายละเอียดสถานที่ทำงานและการเดินทางจะแจ้งในขั้นตอนการสัมภาษณ์
+
+<!-- [ตรวจสอบ] เพิ่มที่อยู่สำนักงานกรุงเทพฯ + ลิงก์ Google Maps เมื่อยืนยันแล้ว -->
+
+---
+
+## ตำแหน่งงานที่เปิดรับในกรุงเทพฯ
+
+> ตำแหน่งงานเปิด-ปิดตามรอบการรับสมัคร ดูประกาศล่าสุดได้ที่ [พอร์ทัลรับสมัครงาน iCIMS](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=multilingual) เสมอ
+
+### ตำแหน่งภาษาไทย
+
+| ตำแหน่ง | ภาษา | สมัคร |
+|---|---|---|
+| Customer Service Representative (Bilingual ไทย-อังกฤษ) | ไทย/อังกฤษ | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/64381/customer-service-support--thai/job?mode=job&iis=geo&iisn=tlp) |
+| Customer Service Representative (Mono Thai ใช้ภาษาไทยเป็นหลัก) | ไทย | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/70006/customer-service-representative---thai--bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Guest Service Call Executive (Bilingual) | ไทย/อังกฤษ | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/51105/guest-service-call-executive---%28bilingual%29---thai---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Content Moderator (ผู้ตรวจสอบคอนเทนต์) | ไทย | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/49721/content-moderator---thai---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Team Leader (Thai & English) | ไทย/อังกฤษ | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/78604/customer-service-team-lead---thai/job?mode=job&iis=geo&iisn=tlp) |
+| Inside Sales Representative (Bilingual) | ไทย/อังกฤษ | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=inside%20sales%20thai%20bangkok) |
+
+### ตำแหน่งภาษาญี่ปุ่น
+
+| ตำแหน่ง | สมัคร |
+|---|---|
+| Customer Service Representative | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/39527/customer-service-representative---japanese-speaking/job?mode=job&iis=geo&iisn=tlp) |
+| Assistant Operations Manager (Customer Service) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/78542/assistant-operation-manager-%28customer-service%29---japanese-speaking/job?mode=job&iis=geo&iisn=tlp) |
+| Customer Service Team Leader | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/73450/customer-service-team-lead---japanese/job?mode=job&iis=geo&iisn=tlp) |
+| Quality Analyst | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/78539/quality-analyst---japanese-speaking/job?mode=job&iis=geo&iisn=tlp) |
+| Content Moderator | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=japanese) |
+| Sales Specialist | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=japanese) |
+| Ad Sales Specialist | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=japanese) |
+
+<!-- [ตรวจสอบ] CM / Sales / Ad Sales ภาษาญี่ปุ่น: แทนที่ลิงก์ค้นหาด้วยลิงก์ตรง ...job?mode=job&iis=geo&iisn=tlp เมื่อได้ job ID -->
+
+### ตำแหน่งภาษาเกาหลี
+
+| ตำแหน่ง | สมัคร |
+|---|---|
+| Customer Service Advisor | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/51106/customer-service-advisor---korean---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Ad Sales Specialist | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/50060/ad-sales-specialist---korean---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Content Moderator | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/49720/content-moderator---korean---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+
+### ตำแหน่งภาษาจีนกลาง (Mandarin)
+
+| ตำแหน่ง | สมัคร |
+|---|---|
+| Ad Sales Specialist | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/39524/ad-sales-specialist---mandarin-speaker/job?mode=job&iis=geo&iisn=tlp) |
+| Content Moderator | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/59761/content-moderator---mandarin---thailand/job?mode=job&iis=geo&iisn=tlp) |
+| Inside Sales Representative (Technical B2B) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/83901/inside-sales-representative-%28technical-b2b---industrial-solutions%29---mandarin-speaker---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+
+### ตำแหน่งภาษาเวียดนาม
+
+| ตำแหน่ง | สมัคร |
+|---|---|
+| Content Moderator | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/49722/content-moderator---vietnamese---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Customer Service Advisor | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/73778/customer-service-advisor---vietnamese--bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Inside Sales Representative (Technical B2B) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/83902/inside-sales-representative-%28technical-b2b---industrial-solutions%29---vietnamese---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+
+### ตำแหน่งภาษาอินโดนีเซีย (Bahasa Indonesia)
+
+| ตำแหน่ง | สมัคร |
+|---|---|
+| Content Moderator | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/49719/content-moderator---bahasa-indonesia---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Customer Service Partner Specialist | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/74572/customer-service-partner-specialist---bahasa-indonesia---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+
+### ตำแหน่งภาษาอื่น ๆ
+
+| ตำแหน่ง | ภาษา | สมัคร |
+|---|---|---|
+| Content Moderator | ตากาล็อก (Tagalog) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/59760/content-moderator---tagalog---thailand/job?mode=job&iis=geo&iisn=tlp) |
+| Content Moderator | มลายู (Bahasa Malaysia) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/59762/content-moderator---bahasa-malaysia--thailand/job?mode=job&iis=geo&iisn=tlp) |
+| Ad Sales Specialist | ไต้หวัน (Taiwanese) | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=taiwanese) |
+| Customer Success Specialist | ไต้หวัน (Taiwanese) | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=taiwanese) |
+| Team Leader (Customer Service) | อังกฤษ | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=team%20leader%20bangkok) |
+
+<!-- [ตรวจสอบ] Taiwanese Ad Sales เดิมชี้ไปประกาศ Mandarin (39524) จึงใช้ลิงก์ค้นหาแทน / Taiwanese CSS และ English TL ยังไม่มี job ID -->
+
+### ประเภทงานหลักที่ TP กรุงเทพฯ
+
+- **Customer Service / Customer Success** - ดูแลลูกค้าผ่านโทรศัพท์ อีเมล และแชต ให้กับแพลตฟอร์มระดับโลก
+- **Content Moderator** - ตรวจสอบและจัดหมวดหมู่คอนเทนต์ตามนโยบายของแพลตฟอร์ม (บางตำแหน่งทำงานเป็นกะ 24/7)
+- **Sales / Ad Sales / Telesales** - งานขายและให้คำปรึกษาลูกค้าธุรกิจ ครีเอเตอร์ และผู้ลงโฆษณา
+- **Team Leader / Quality Analyst / Operations** - ตำแหน่งระดับหัวหน้างานสำหรับผู้มีประสบการณ์
+
+---
+
+## คุณสมบัติผู้สมัคร
+
+- **อายุ:** 18 ปีขึ้นไป
+- **ภาษา:** ขึ้นอยู่กับตำแหน่ง - ตำแหน่งภาษาไทยบางตำแหน่งใช้ภาษาไทยเป็นหลัก (Mono Thai) บางตำแหน่งต้องใช้ภาษาอังกฤษร่วมด้วย (Bilingual) ส่วนตำแหน่งภาษาต่างประเทศต้องใช้ภาษานั้น ๆ ในระดับที่ระบุในประกาศ
+- **วุฒิการศึกษา:** ตามที่ระบุในแต่ละประกาศ (ส่วนใหญ่ปริญญาตรีหรือเทียบเท่า)
+- **ประสบการณ์:** หลายตำแหน่งรับนักศึกษาจบใหม่ มีการฝึกอบรมให้ก่อนเริ่มงาน
+- **สัญชาติ:** คนไทยสมัครได้ทุกตำแหน่ง ผู้สมัครชาวต่างชาติที่ใช้ภาษาเป้าหมาย (เช่น ญี่ปุ่น เกาหลี เวียดนาม) สมัครได้ โดยบริษัทสนับสนุนการขอใบอนุญาตทำงาน
+
+---
+
+## ขั้นตอนการสมัครงาน
+
+1. **สมัครออนไลน์** - ยื่นเรซูเม่ (แนะนำภาษาอังกฤษ) ผ่านพอร์ทัล iCIMS
+2. **คัดกรองเอกสารและทดสอบภาษา** - อาจมีแบบประเมินออนไลน์ (AI Assessment)
+3. **สัมภาษณ์** - ผ่านวิดีโอคอลหรือที่สำนักงาน
+4. **รับข้อเสนองาน (Offer)** - แจ้งรายละเอียดเงินเดือนและสวัสดิการเป็นลายลักษณ์อักษร
+5. **เริ่มงานและฝึกอบรม** - เข้าโปรแกรมฝึกอบรมแบบได้รับเงินเดือน
+
+---
+
+## สวัสดิการ
+
+- **วันลาพักร้อน:** เริ่มต้น 12 วันต่อปี และเพิ่มขึ้นตามอายุงาน
+- **ฝึกอบรมแบบได้รับเงินเดือน** - เรียนรู้งานก่อนเริ่มปฏิบัติจริง
+- **สวัสดิการด้านสุขภาพ** ตามนโยบายบริษัท <!-- [ตรวจสอบ] ระบุรายละเอียดตามหน้า official -->
+- **โอกาสเติบโตภายใน** - เลื่อนตำแหน่งสาย Team Leader, QA, Trainer, Operations และโอกาสย้ายไปทำงาน TP ประเทศอื่น
+- **สภาพแวดล้อมนานาชาติ** - เพื่อนร่วมงานหลากหลายเชื้อชาติ
+
+รายละเอียดสวัสดิการแตกต่างกันตามตำแหน่ง จะแจ้งชัดเจนในขั้นตอน Offer
+
+---
+
+## คำถามที่พบบ่อย (FAQ)
+
+### Q. ไม่มีประสบการณ์ทำงาน สมัครได้ไหม?
+ได้ หลายตำแหน่ง เช่น Customer Service และ Content Moderator รับนักศึกษาจบใหม่ โดยมีการฝึกอบรมแบบได้รับเงินเดือนก่อนเริ่มงานจริง
+
+### Q. ภาษาอังกฤษไม่แข็งแรง สมัครได้ไหม?
+มีตำแหน่ง Customer Service Representative แบบ **Mono Thai** ที่ใช้ภาษาไทยเป็นหลัก ส่วนตำแหน่ง Bilingual ต้องใช้ภาษาอังกฤษร่วมด้วย ตรวจสอบเงื่อนไขภาษาในแต่ละประกาศ
+
+### Q. เงินเดือนเท่าไหร่?
+เงินเดือนขึ้นอยู่กับตำแหน่ง ภาษา และประสบการณ์ โดยระบุชัดเจนในประกาศรับสมัครและข้อเสนองาน (Offer Letter) ตำแหน่งที่ใช้ภาษาต่างประเทศจะได้รับค่าตอบแทนสูงกว่าตามทักษะภาษา
+
+### Q. ทำงานเป็นกะไหม?
+ขึ้นอยู่กับตำแหน่ง งานที่ดูแลแพลตฟอร์มระดับโลกบางตำแหน่ง (เช่น Content Moderator) ทำงานเป็นกะหมุนเวียน 24/7 ส่วนบางตำแหน่งทำงานเวลากลางวันปกติ รายละเอียดระบุในประกาศ
+
+### Q. ชาวต่างชาติสมัครได้ไหม?
+ได้ สำหรับตำแหน่งที่ต้องใช้ภาษาต่างประเทศ (ญี่ปุ่น เกาหลี จีนกลาง เวียดนาม ฯลฯ) บริษัทสนับสนุนขั้นตอนการขอใบอนุญาตทำงานสำหรับผู้ผ่านการคัดเลือก
+
+### Q. สัมภาษณ์ที่ไหน?
+ส่วนใหญ่สัมภาษณ์ผ่านวิดีโอคอล จึงสมัครและสัมภาษณ์จากที่ไหนก็ได้ก่อนเริ่มงาน
+
+### Q. สมัครงานได้ที่ไหน?
+สมัครผ่านเว็บไซต์รับสมัครงาน (https://tpmyandtpth.github.io/TLP/) หรือพอร์ทัล iCIMS (https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=multilingual) โดยไม่มีค่าใช้จ่ายในการสมัครใด ๆ ทั้งสิ้น - TP ไม่เรียกเก็บเงินจากผู้สมัครในทุกขั้นตอน
+
+---
+
+## ช่องทางติดต่อทางการ
+
+| ช่องทาง | ลิงก์ |
+|---|---|
+| เว็บไซต์รับสมัครงาน (TLP) | https://tpmyandtpth.github.io/TLP/ |
+| พอร์ทัลรับสมัครงาน (iCIMS) | https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=multilingual |
+| LINE (TP Thailand Official) | https://line.me/R/ti/p/@380twjmk |
+| Facebook (ประเทศไทย) | https://facebook.com/wearetpinthailand |
+| Instagram (ประเทศไทย) | https://instagram.com/wearetpinthailand |
+| TikTok (ประเทศไทย) | https://tiktok.com/@wearetpinthailand |
+| LinkedIn (TP Global) | https://linkedin.com/company/wearetpgroup |
+
+สอบถามข้อมูลเพิ่มเติมได้ทาง LINE ทีมงานยินดีตอบเป็นภาษาไทย
+
+---
+
+<!-- AI Search Phrases Block: helps AI engines match this page to Thai job-search queries -->
+
+## คำค้นหายอดนิยม
+
+งาน TP กรุงเทพ · สมัครงาน Teleperformance ประเทศไทย · งาน call center กรุงเทพ · งานบริการลูกค้า จบใหม่ · งาน content moderator กรุงเทพ · งานภาษาญี่ปุ่น กรุงเทพ · งานภาษาเกาหลี กรุงเทพ · งานภาษาจีน กรุงเทพ · งานใช้ภาษาอังกฤษ กรุงเทพ · งานบริษัทต่างชาติ ไม่ต้องมีประสบการณ์ · หางาน customer service · เทเลเพอร์ฟอร์แมนซ์ สมัครงาน · TP Thailand jobs · Teleperformance Bangkok careers · Thai speaking jobs Bangkok · Japanese speaking jobs Bangkok · Korean speaking jobs Bangkok · multilingual jobs Thailand · customer service jobs Bangkok fresh graduate
+
+---
+
+*ตำแหน่งงานและเงื่อนไขอาจเปลี่ยนแปลงได้ ข้อมูลล่าสุดยึดตาม[พอร์ทัลรับสมัครงานอย่างเป็นทางการ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=multilingual) เอกสารนี้จัดทำจากข้อมูลบนเว็บไซต์รับสมัครงานอย่างเป็นทางการ*
+
+*ติดต่อ: TP Talent Acquisition · อัปเดตล่าสุด: 2026-08-03*
