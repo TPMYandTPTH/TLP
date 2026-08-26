@@ -383,6 +383,23 @@ body[data-lang="th"] .switch .lab{font-family:'Noto Sans Thai',var(--mono)}
 .qa .a>p{overflow:hidden;min-height:0}
 .qa .a p{padding:0 16px 16px;font-size:13px;color:var(--muted);line-height:1.55}
 body[data-lang="th"] .qa .a p{line-height:1.7}
+/* answers that hold more than one block wrap them in .a-in so the grid
+   accordion still animates a single row (see .qa .a>p above) */
+.qa .a>.a-in{overflow:hidden;min-height:0}
+.raf-wrap{padding:0 16px 12px;overflow-x:auto}
+.raf{width:100%;border-collapse:collapse;font-size:12.5px;color:var(--ink)}
+.raf caption{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--slate-2);padding:0 0 6px}
+body[data-lang="th"] .raf caption{font-family:'Noto Sans Thai',var(--mono);text-transform:none;letter-spacing:0}
+.raf th,.raf td{text-align:left;padding:7px 10px 7px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.raf thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--muted);border-bottom-color:var(--line-2)}
+body[data-lang="th"] .raf thead th{font-family:'Noto Sans Thai',var(--mono);text-transform:none;letter-spacing:0}
+.raf td:last-child,.raf th:last-child{text-align:right;white-space:nowrap;padding-right:0}
+.raf td:last-child{font-family:var(--display);font-weight:700;color:var(--pink)}
+.raf tbody tr:last-child td{border-bottom:0}
+.raf tr.top td:last-child{color:var(--teal-ink)}
+.raf-note{padding:0 16px 16px;font-size:11.5px;color:var(--muted);line-height:1.5}
 
 .s-final{background:radial-gradient(120% 90% at 50% 0%,rgba(255,0,130,.06),transparent 55%),var(--bg);justify-content:flex-start}
 .final-card{margin-top:14px;border-radius:22px;padding:24px;background:var(--slate);color:#fff;position:relative;overflow:hidden}
@@ -620,7 +637,7 @@ body[data-lang="th"] .disc{line-height:1.65}
         <div class="cell refer">
           <span class="ms">volunteer_activism</span>
           <div class="k" data-i18n="b7_k">Boost your income — refer a friend</div>
-          <div class="v"><span data-i18n="b7_v1">Know someone great? When a friend you refer joins and passes probation, you earn up to</span> <b class="refer-amt" id="refAmt">฿10,000</b><span data-i18n="b7_v2">— paid straight to you.</span></div>
+          <div class="v"><span data-i18n="b7_v1">Know someone great? When a friend you refer joins and passes probation, you earn up to</span> <b class="refer-amt" id="refAmt">฿10,000</b><span data-i18n="b7_v2">— depending on language and nationality, paid straight to you.</span></div>
           <a class="refer-link" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="b7_cta">Refer a friend</span> <span class="ms" aria-hidden="true">arrow_forward</span></a>
         </div>
       </div>
@@ -748,6 +765,25 @@ body[data-lang="th"] .disc{line-height:1.65}
         <div class="qa" data-i18n="q2"><div class="q">Do you support visa and work permit?<span class="ms">add</span></div><div class="a"><p>Yes — for candidates relocating to Thailand, TP supports the Non-B visa and work permit process for successful candidates.</p></div></div>
         <div class="qa" data-i18n="q3"><div class="q">What languages are you hiring for?<span class="ms">add</span></div><div class="a"><p>Thai and English, plus multilingual lines — Japanese, Korean, Mandarin, Vietnamese, Bahasa Indonesia, Tagalog, Bahasa Malaysia and Taiwanese. Check the jobs portal for what is open right now.</p></div></div>
         <div class="qa" data-i18n="q4"><div class="q">Is there any fee to apply?<span class="ms">add</span></div><div class="a"><p>No. Applying is completely free — TP never charges candidates at any stage. Salary and benefits are stated in the job posting and confirmed in writing in your offer letter.</p></div></div>
+        <div class="qa" data-i18n="q8"><div class="q">How much is the referral bonus?<span class="ms">add</span></div><div class="a"><div class="a-in"><p>It depends on the language and the referred candidate's nationality. Amounts are in Thai Baht and paid once your referral joins and passes probation. Schedule effective 15 June 2026, all campaigns and positions.</p>
+          <div class="raf-wrap"><table class="raf"><caption>Thai nationals</caption>
+            <thead><tr><th>Language</th><th>Amount</th></tr></thead>
+            <tbody>
+              <tr><td>Thai</td><td>฿5,000</td></tr>
+              <tr><td>English</td><td>฿7,000</td></tr>
+              <tr><td>Mandarin, Cantonese, Japanese, Korean <em>(Thai or near-native)</em></td><td>฿10,000</td></tr>
+              <tr><td>Vietnamese, Bahasa Malaysia, Bahasa Indonesia</td><td>฿10,000</td></tr>
+            </tbody></table></div>
+          <div class="raf-wrap"><table class="raf"><caption>Other nationalities</caption>
+            <thead><tr><th>Language <em>(nationality)</em></th><th>Amount</th></tr></thead>
+            <tbody>
+              <tr><td>Tagalog <em>(Filipino)</em>, Hindi <em>(Indian)</em>, Burmese <em>(Burmese)</em>, Vietnamese <em>(Vietnamese)</em>, Bahasa Malaysia <em>(Malaysian)</em>, Bahasa Indonesia <em>(Indonesian)</em></td><td>฿10,000</td></tr>
+              <tr><td>Mandarin, Cantonese <em>(Chinese)</em></td><td>฿20,000</td></tr>
+              <tr><td>Japanese <em>(Japanese)</em>, Korean <em>(Korean)</em></td><td>฿30,000</td></tr>
+              <tr class="top"><td>Mandarin — LLS campaign <em>(Chinese or Thai)</em></td><td>฿40,000</td></tr>
+            </tbody></table></div>
+          <p class="raf-note">Final eligibility and payment terms are confirmed by TP Talent Acquisition.</p>
+        </div></div></div>
         <div class="qa" data-i18n="q5"><div class="q">What does a typical workday look like?<span class="ms">add</span></div><div class="a"><p>8-hour shifts with rest days each week. Pantries, prayer/quiet rooms and break areas on-site. BTS-connected for an easy commute.</p></div></div>
         <div class="qa" data-i18n="q6"><div class="q">Is Bangkok affordable?<span class="ms">add</span></div><div class="a"><p>Yes — one of Asia's most liveable cities. Great street food, efficient transit, and a strong international community.</p></div></div>
         <div class="qa" data-i18n="q7"><div class="q">Can I grow into leadership?<span class="ms">add</span></div><div class="a"><p>Many team leads started frontline. Internal paths into Team Leader, QA, Trainer and Operations, plus mentorship, leadership academies and GoFluent training.</p></div></div>
@@ -849,8 +885,11 @@ body[data-lang="th"] .disc{line-height:1.65}
     // LINE quick-apply / chat bot — the floating "Chat on LINE" button + every "Chat on LINE" link.
     // Currently your live LINE bot @286nmdsd. If the TH LINE bot has its own OA add-friend link, paste it here.
     LINE:"https://line.me/R/ti/p/@286nmdsd",
-    // Refer-a-friend headline amount shown inside Benefits. <-- REPLACE with the real Thai Baht figure.
-    REFERRAL_MAX:"฿10,000",
+    // Refer-a-friend headline amount shown inside Benefits.
+    // Thailand RAF schedule effective 15 June 2026. THB 40,000 is the top band
+    // (Mandarin, LLS campaign, Chinese or Thai national). Full breakdown lives in
+    // the "How much is the referral bonus?" FAQ entry and in README.md.
+    REFERRAL_MAX:"฿40,000",
     // Social accounts — TP Thailand + global (LinkedIn/YouTube under @wearetpgroup).
     FACEBOOK:"https://www.facebook.com/wearetpinthailand",
     INSTAGRAM:"https://www.instagram.com/wearetpinthailand/",
@@ -963,7 +1002,7 @@ body[data-lang="th"] .disc{line-height:1.65}
 
     b7_k:"เพิ่มรายได้ — แนะนำเพื่อน",
     b7_v1:"รู้จักคนเก่งๆ ไหม? เมื่อเพื่อนที่คุณแนะนำเข้าทำงานและผ่านช่วงทดลองงาน คุณรับสูงสุด",
-    b7_v2:"— จ่ายตรงถึงคุณ",
+    b7_v2:"— ขึ้นอยู่กับภาษาและสัญชาติ จ่ายตรงถึงคุณ",
     b7_cta:"แนะนำเพื่อน",
 
     s8_brand:"ออฟฟิศ",
@@ -988,6 +1027,7 @@ body[data-lang="th"] .disc{line-height:1.65}
     q2:"<div class='q'>สนับสนุนวีซ่าและใบอนุญาตทำงานไหม?<span class='ms'>add</span></div><div class='a'><p>สนับสนุน สำหรับผู้สมัครที่ย้ายมาประเทศไทย TP สนับสนุนขั้นตอนการขอวีซ่า Non-B และใบอนุญาตทำงานสำหรับผู้ผ่านการคัดเลือก</p></div>",
     q3:"<div class='q'>กำลังรับสมัครภาษาอะไรบ้าง?<span class='ms'>add</span></div><div class='a'><p>ภาษาไทยและอังกฤษ รวมถึงตำแหน่งหลายภาษา — ญี่ปุ่น เกาหลี จีนกลาง เวียดนาม อินโดนีเซีย ตากาล็อก มลายู และไต้หวัน ตรวจสอบตำแหน่งที่เปิดรับล่าสุดได้ที่พอร์ทัลรับสมัครงาน</p></div>",
     q4:"<div class='q'>มีค่าใช้จ่ายในการสมัครไหม?<span class='ms'>add</span></div><div class='a'><p>ไม่มี การสมัครไม่มีค่าใช้จ่ายใด ๆ ทั้งสิ้น TP ไม่เรียกเก็บเงินจากผู้สมัครในทุกขั้นตอน เงินเดือนและสวัสดิการระบุในประกาศรับสมัคร และยืนยันเป็นลายลักษณ์อักษรในจดหมายเสนองาน</p></div>",
+    q8:"<div class='q'>โบนัสแนะนำเพื่อนได้เท่าไร?<span class='ms'>add</span></div><div class='a'><div class='a-in'><p>ขึ้นอยู่กับภาษาและสัญชาติของผู้ที่คุณแนะนำ จำนวนเงินเป็นเงินบาท จ่ายเมื่อผู้ที่คุณแนะนำเข้าทำงานและผ่านช่วงทดลองงาน มีผลตั้งแต่ 15 มิถุนายน 2026 ทุกแคมเปญและทุกตำแหน่ง</p><div class='raf-wrap'><table class='raf'><caption>ผู้สมัครสัญชาติไทย</caption><thead><tr><th>ภาษา</th><th>จำนวนเงิน</th></tr></thead><tbody><tr><td>ไทย</td><td>฿5,000</td></tr><tr><td>อังกฤษ</td><td>฿7,000</td></tr><tr><td>จีนกลาง กวางตุ้ง ญี่ปุ่น เกาหลี <em>(ไทย หรือระดับเจ้าของภาษา)</em></td><td>฿10,000</td></tr><tr><td>เวียดนาม มลายู อินโดนีเซีย</td><td>฿10,000</td></tr></tbody></table></div><div class='raf-wrap'><table class='raf'><caption>ผู้สมัครสัญชาติอื่น ๆ</caption><thead><tr><th>ภาษา <em>(สัญชาติ)</em></th><th>จำนวนเงิน</th></tr></thead><tbody><tr><td>ตากาล็อก <em>(ฟิลิปปินส์)</em> ฮินดี <em>(อินเดีย)</em> พม่า <em>(พม่า)</em> เวียดนาม <em>(เวียดนาม)</em> มลายู <em>(มาเลเซีย)</em> อินโดนีเซีย <em>(อินโดนีเซีย)</em></td><td>฿10,000</td></tr><tr><td>จีนกลาง กวางตุ้ง <em>(จีน)</em></td><td>฿20,000</td></tr><tr><td>ญี่ปุ่น <em>(ญี่ปุ่น)</em> เกาหลี <em>(เกาหลี)</em></td><td>฿30,000</td></tr><tr class='top'><td>จีนกลาง — แคมเปญ LLS <em>(จีน หรือ ไทย)</em></td><td>฿40,000</td></tr></tbody></table></div><p class='raf-note'>เงื่อนไขการจ่ายและคุณสมบัติขั้นสุดท้ายยืนยันโดยทีม TP Talent Acquisition</p></div></div>",
     q5:"<div class='q'>วันทำงานทั่วไปเป็นอย่างไร?<span class='ms'>add</span></div><div class='a'><p>ทำงานกะละ 8 ชั่วโมง มีวันหยุดทุกสัปดาห์ มีห้องครัว ห้องละหมาด/ห้องสงบ และพื้นที่พักผ่อนในออฟฟิศ เชื่อมต่อ BTS เดินทางสะดวก</p></div>",
     q6:"<div class='q'>ค่าครองชีพในกรุงเทพฯ เป็นอย่างไร?<span class='ms'>add</span></div><div class='a'><p>กรุงเทพฯ เป็นหนึ่งในเมืองน่าอยู่ที่สุดของเอเชีย สตรีทฟู้ดอร่อย ขนส่งสาธารณะสะดวก และมีชุมชนนานาชาติที่แข็งแกร่ง</p></div>",
     q7:"<div class='q'>เติบโตเป็นผู้นำได้ไหม?<span class='ms'>add</span></div><div class='a'><p>หัวหน้าทีมหลายคนเริ่มจากหน้างาน มีเส้นทางเติบโตภายในสาย Team Leader, QA, Trainer และ Operations พร้อมพี่เลี้ยง สถาบันผู้นำ และการฝึกอบรม GoFluent</p></div>",
