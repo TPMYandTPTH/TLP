@@ -4,7 +4,8 @@
   Rename to README.md when placing in the TLP repo root.
   Purpose: candidate-facing + AI search engines (ChatGPT, Perplexity, Gemini) crawling GitHub.
   All direct iCIMS links carry ?mode=job&iis=geo&iisn=tlp for attribution.
-  Jobs sourced from the ELP data set (Bangkok location only).
+  Jobs sourced from the ELP evergreen link list (Bangkok, plus one Work From Home role).
+  index.html renders the same set from its JOBS array - update both together.
   Items marked in comments must be verified before commit.
 
   THAILAND CONTENT RULES - these differ from other TP markets.
@@ -88,21 +89,19 @@
 | Guest Service Call Executive (Bilingual) | ไทย/อังกฤษ | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/51105/guest-service-call-executive---%28bilingual%29---thai---bangkok/job?mode=job&iis=geo&iisn=tlp) |
 | Content Moderator (ผู้ตรวจสอบคอนเทนต์) | ไทย | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/49721/content-moderator---thai---bangkok/job?mode=job&iis=geo&iisn=tlp) |
 | Team Leader (Thai & English) | ไทย/อังกฤษ | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/78604/customer-service-team-lead---thai/job?mode=job&iis=geo&iisn=tlp) |
-| Inside Sales Representative (Bilingual) | ไทย/อังกฤษ | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=inside%20sales%20thai%20bangkok) |
+| Inside Sales Representative (Technical B2B, Bilingual) | ไทย/อังกฤษ | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/83902/inside-sales-representative-%28technical-b2b---industrial-solutions%29---thai-bilingual---bangkok/job?mode=job&iis=geo&iisn=tlp) |
 
 ### ตำแหน่งภาษาญี่ปุ่น
 
 | ตำแหน่ง | สมัคร |
 |---|---|
-| Customer Service Representative | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/39527/customer-service-representative---japanese-speaking/job?mode=job&iis=geo&iisn=tlp) |
+| Customer Service Representative | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/39527/customer-success-specialist---japanese-speaker/job?mode=job&iis=geo&iisn=tlp) |
 | Assistant Operations Manager (Customer Service) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/78542/assistant-operation-manager-%28customer-service%29---japanese-speaking/job?mode=job&iis=geo&iisn=tlp) |
 | Customer Service Team Leader | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/73450/customer-service-team-lead---japanese/job?mode=job&iis=geo&iisn=tlp) |
 | Quality Analyst | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/78539/quality-analyst---japanese-speaking/job?mode=job&iis=geo&iisn=tlp) |
-| Content Moderator | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=japanese) |
-| Sales Specialist | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=japanese) |
-| Ad Sales Specialist | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=japanese) |
-
-<!-- [ตรวจสอบ] CM / Sales / Ad Sales ภาษาญี่ปุ่น: แทนที่ลิงก์ค้นหาด้วยลิงก์ตรง ...job?mode=job&iis=geo&iisn=tlp เมื่อได้ job ID -->
+| Content Moderator | [สมัครงาน](https://jobs-teleperformance.icims.com/jobs/71802/%e3%82%b3%e3%83%b3%e3%83%86%e3%83%b3%e3%83%84%e3%83%a2%e3%83%87%e3%83%ac%e3%83%bc%e3%82%bf%e3%83%bc%e3%83%bb%e6%97%a5%e6%9c%ac%e8%aa%9e%e5%af%be%e5%bf%9c%ef%bc%88japanese-speaking-content-moderator%ef%bc%89/job?mode=job&iis=geo&iisn=tlp) |
+| Sales Specialist | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/71850/%e6%97%a5%e6%9c%ac%e8%aa%9e%e5%af%be%e5%bf%9c%e3%83%bb%e3%82%bb%e3%83%bc%e3%83%ab%e3%82%b9%e3%82%b9%e3%83%9a%e3%82%b7%e3%83%a3%e3%83%aa%e3%82%b9%e3%83%88%ef%bc%88japanese-speaking-sales-specialist%ef%bc%89%e3%80%90%e3%82%a8%e3%83%90%e3%83%bc%e3%82%b0%e3%83%aa%e3%83%bc%e3%83%b3%e6%b1%82%e4%ba%ba%e3%80%91/job?mode=job&iis=geo&iisn=tlp) |
+| Ad Sales Specialist | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/63899/ad-sales-specialist---japanese--bangkok/job?mode=job&iis=geo&iisn=tlp) |
 
 ### ตำแหน่งภาษาเกาหลี
 
@@ -126,7 +125,8 @@
 |---|---|
 | Content Moderator | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/49722/content-moderator---vietnamese---bangkok/job?mode=job&iis=geo&iisn=tlp) |
 | Customer Service Advisor | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/73778/customer-service-advisor---vietnamese--bangkok/job?mode=job&iis=geo&iisn=tlp) |
-| Inside Sales Representative (Technical B2B) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/83902/inside-sales-representative-%28technical-b2b---industrial-solutions%29---vietnamese---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Inside Sales Representative (Technical B2B) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/83898/inside-sales-representative-%28technical-b2b---industrial-solutions%29---vietnamese---bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Interpreter (Work From Home) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/49548/interpreter---vietnamese---work-from-home/job?mode=job&iis=geo&iisn=tlp) |
 
 ### ตำแหน่งภาษาอินโดนีเซีย (Bahasa Indonesia)
 
@@ -141,11 +141,11 @@
 |---|---|---|
 | Content Moderator | ตากาล็อก (Tagalog) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/59760/content-moderator---tagalog---thailand/job?mode=job&iis=geo&iisn=tlp) |
 | Content Moderator | มลายู (Bahasa Malaysia) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/59762/content-moderator---bahasa-malaysia--thailand/job?mode=job&iis=geo&iisn=tlp) |
-| Ad Sales Specialist | ไต้หวัน (Taiwanese) | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=taiwanese) |
-| Customer Success Specialist | ไต้หวัน (Taiwanese) | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=taiwanese) |
-| Team Leader (Customer Service) | อังกฤษ | [ค้นหาประกาศ](https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=team%20leader%20bangkok) |
+| Ad Sales Specialist | ไต้หวัน (Taiwanese) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/39524/ad-sales-specialist---mandarin-speaker/job?mode=job&iis=geo&iisn=tlp) |
+| Customer Success Specialist | ไต้หวัน (Taiwanese) | [สมัครงาน](https://careerseng-teleperformance.icims.com/jobs/67038/customer-success-specialist---taiwanese--bangkok/job?mode=job&iis=geo&iisn=tlp) |
+| Team Leader (Customer Service) | อังกฤษ | [สมัครงาน](https://careers-teleperformance.icims.com/jobs/70575/team-leader-%28cs%29---english---bangkok/job?mode=job&iis=geo&iisn=tlp) |
 
-<!-- [ตรวจสอบ] Taiwanese Ad Sales เดิมชี้ไปประกาศ Mandarin (39524) จึงใช้ลิงก์ค้นหาแทน / Taiwanese CSS และ English TL ยังไม่มี job ID -->
+<!-- Taiwanese และ Mandarin Ad Sales ใช้ประกาศเดียวกัน (39524) ตามรายการ evergreen link ที่ได้รับ -->
 
 ### ประเภทงานหลักที่ TP กรุงเทพฯ
 

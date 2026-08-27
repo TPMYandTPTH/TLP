@@ -263,6 +263,26 @@ body[data-lang="th"] .role .apply{font-family:'Noto Sans Thai',var(--display)}
 .roles-all .ms{font-size:16px}
 body[data-lang="th"] .roles-all{font-family:'Noto Sans Thai',var(--display)}
 
+/* open-roles list, rendered from the JOBS table below */
+.rgrp{border:1px solid var(--line);border-radius:16px;background:var(--paper);overflow:hidden}
+.rgrp-h{display:flex;align-items:center;gap:8px;padding:12px 15px;background:var(--paper-2);
+  font-family:var(--display);font-weight:700;font-size:13px;color:var(--slate-ink);letter-spacing:-.01em}
+body[data-lang="th"] .rgrp-h{font-family:'Noto Sans Thai',var(--display)}
+.rgrp-h .ms{font-size:17px;color:var(--slate-2)}
+.rgrp-h .n{margin-left:auto;font-family:var(--mono);font-size:10.5px;font-weight:700;
+  background:var(--slate);color:#fff;padding:3px 8px;border-radius:100px}
+.rrow{display:flex;align-items:center;gap:10px;padding:12px 15px;border-top:1px solid var(--line);
+  background:var(--bg);transition:background .18s}
+.rrow:hover{background:var(--paper-2)}
+.rrow .rn{flex:1;min-width:0;font-family:var(--display);font-weight:600;font-size:14px;color:var(--ink)}
+body[data-lang="th"] .rrow .rn{font-family:'Noto Sans Thai',var(--display);line-height:1.45}
+.rrow .rl{display:inline-flex;align-items:center;gap:3px;font-family:var(--mono);font-size:10px;
+  color:var(--muted);white-space:nowrap}
+body[data-lang="th"] .rrow .rl{font-family:'Noto Sans Thai',var(--mono)}
+.rrow .rl .ms{font-size:13px}
+.rrow .rl.wfh{color:var(--teal-ink)}
+.rrow .go{font-family:'Material Symbols Outlined';font-size:18px;color:var(--pink)}
+
 .bento{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px;overflow-y:auto;max-height:min(66vh,600px);padding-right:2px}
 .bento::-webkit-scrollbar{width:5px}.bento::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:4px}
 @media(min-width:760px){.bento{grid-template-columns:repeat(3,1fr)}}
@@ -556,67 +576,7 @@ body[data-lang="th"] .disc{line-height:1.65}
       <h2 class="enter" style="font-size:clamp(28px,6.5vw,44px)" data-i18n="s3_h">Open <em>roles</em>.</h2>
       <p class="lede enter" style="margin-bottom:4px" data-i18n="s3_lede">Full training. Apply in 5 minutes.</p>
 
-      <div class="roles enter" id="roles">
-        <div class="role open">
-          <div class="role-top"><div class="ttl" data-i18n="r1_ttl"><div class="name">Customer Service Specialist</div>
-            <div class="sub"><span class="ms">translate</span>Thai · <span class="ms">location_on</span>Bangkok</div></div>
-            <span class="tag" data-i18n="r1_tag">chat &amp; voice</span><span class="chev">expand_more</span></div>
-          <div class="role-body"><div class="role-inner" data-i18n="r1_body">
-            <p>Provide Thai-language support for a global brand across chat, email and phone.</p>
-            <div class="role-pay"><span class="ms">payments</span>Salary stated in the job posting <span class="det">— confirmed in writing in your offer letter.</span></div>
-            <div class="role-perks"><span><span class="ms">health_and_safety</span>Medical</span><span><span class="ms">school</span>Training</span><span><span class="ms">trending_up</span>Growth</span></div>
-            <a class="apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thai" target="_blank" rel="noopener">Apply now →</a>
-          </div></div>
-        </div>
-
-        <div class="role">
-          <div class="role-top"><div class="ttl" data-i18n="r2_ttl"><div class="name">Technical Support Agent</div>
-            <div class="sub"><span class="ms">schedule</span>Thai · rotating shifts · <span class="ms">location_on</span>Bangkok</div></div>
-            <span class="tag pk" data-i18n="r2_tag">shifts</span><span class="chev">expand_more</span></div>
-          <div class="role-body"><div class="role-inner" data-i18n="r2_body">
-            <p>First-line tech support in Thai for a global streaming service. Troubleshoot app and device issues.</p>
-            <div class="role-pay"><span class="ms">payments</span>Salary stated in the job posting <span class="det">— confirmed in writing in your offer letter.</span></div>
-            <div class="role-perks"><span><span class="ms">health_and_safety</span>Medical</span><span><span class="ms">school</span>Training</span><span><span class="ms">devices</span>Tech</span></div>
-            <a class="apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thai" target="_blank" rel="noopener">Apply now →</a>
-          </div></div>
-        </div>
-
-        <div class="role">
-          <div class="role-top"><div class="ttl" data-i18n="r3_ttl"><div class="name">Content Review Specialist</div>
-            <div class="sub"><span class="ms">translate</span>Thai · <span class="ms">location_on</span>Bangkok</div></div>
-            <span class="tag teal" data-i18n="r3_tag">wellness first</span><span class="chev">expand_more</span></div>
-          <div class="role-body"><div class="role-inner" data-i18n="r3_body">
-            <p>Review Thai-language content for a global social platform. Ensure community-guideline compliance.</p>
-            <div class="role-pay"><span class="ms">payments</span>Salary stated in the job posting <span class="det">— wellbeing support included for this role.</span></div>
-            <div class="role-perks"><span><span class="ms">psychology</span>Wellbeing</span><span><span class="ms">health_and_safety</span>Medical</span><span><span class="ms">trending_up</span>Growth</span></div>
-            <a class="apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thai" target="_blank" rel="noopener">Apply now →</a>
-          </div></div>
-        </div>
-
-        <div class="role">
-          <div class="role-top"><div class="ttl" data-i18n="r4_ttl"><div class="name">Customer Experience Associate</div>
-            <div class="sub"><span class="ms">verified</span>English · no experience needed · <span class="ms">location_on</span>Bangkok</div></div>
-            <span class="tag teal" data-i18n="r4_tag">entry level</span><span class="chev">expand_more</span></div>
-          <div class="role-body"><div class="role-inner" data-i18n="r4_body">
-            <p>Support English-speaking customers. The perfect first career step — we train you from scratch.</p>
-            <div class="role-pay"><span class="ms">payments</span>Salary stated in the job posting <span class="det">— open to fresh graduates; training provided.</span></div>
-            <div class="role-perks"><span><span class="ms">school</span>Training</span><span><span class="ms">health_and_safety</span>Medical</span><span><span class="ms">diversity_3</span>Global</span></div>
-            <a class="apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=english" target="_blank" rel="noopener">Apply now →</a>
-          </div></div>
-        </div>
-
-        <div class="role">
-          <div class="role-top"><div class="ttl" data-i18n="r5_ttl"><div class="name">Bilingual Customer Service</div>
-            <div class="sub"><span class="ms">translate</span>Thai + English · <span class="ms">location_on</span>Bangkok</div></div>
-            <span class="tag" data-i18n="r5_tag">bilingual</span><span class="chev">expand_more</span></div>
-          <div class="role-body"><div class="role-inner" data-i18n="r5_body">
-            <p>Handle accounts in both Thai and English for a global brand. Premium support for high-value accounts.</p>
-            <div class="role-pay"><span class="ms">payments</span>Salary stated in the job posting <span class="det">— confirmed in writing in your offer letter.</span></div>
-            <div class="role-perks"><span><span class="ms">badge</span>Visa support</span><span><span class="ms">health_and_safety</span>Medical</span><span><span class="ms">trending_up</span>Growth</span></div>
-            <a class="apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener">Apply now →</a>
-          </div></div>
-        </div>
-      </div>
+      <div class="roles enter" id="roles"></div>
       <a class="roles-all" href="https://tpmyandtpth.github.io/LP/" target="_blank" rel="noopener"><span class="ms">grid_view</span> <span data-i18n="roles_all">See all open roles on our jobs hub</span> <span class="ms">arrow_forward</span></a>
     </div>
   </section>
@@ -899,6 +859,70 @@ body[data-lang="th"] .disc{line-height:1.65}
   };
 
   /* =========================================================
+     OPEN ROLES - single source of truth for every Apply link.
+     Every URL is an evergreen iCIMS posting carrying
+     ?mode=job&iis=geo&iisn=tlp for attribution.
+     Note: three different iCIMS hosts are in use (careerseng-,
+     jobs-, careers-); each is taken from the source list as given.
+     To add or retire a role, edit this array only.
+  ========================================================= */
+  var JOB_LANGS=[
+    {k:"th",  en:"Thai",             th:"ภาษาไทย"},
+    {k:"en",  en:"English",          th:"ภาษาอังกฤษ"},
+    {k:"ja",  en:"Japanese",         th:"ภาษาญี่ปุ่น"},
+    {k:"ko",  en:"Korean",           th:"ภาษาเกาหลี"},
+    {k:"zh",  en:"Mandarin",         th:"ภาษาจีนกลาง"},
+    {k:"tw",  en:"Taiwanese",        th:"ภาษาไต้หวัน"},
+    {k:"vi",  en:"Vietnamese",       th:"ภาษาเวียดนาม"},
+    {k:"id",  en:"Bahasa Indonesia", th:"ภาษาอินโดนีเซีย"},
+    {k:"ms",  en:"Bahasa Malaysia",  th:"ภาษามลายู"},
+    {k:"tl",  en:"Tagalog",          th:"ภาษาตากาล็อก"}
+  ];
+  var J_="https://careerseng-teleperformance.icims.com/jobs/";
+  var Q_="/job?mode=job&iis=geo&iisn=tlp";
+  var JOBS=[
+    {l:"th",en:"Customer Service Representative (Bilingual Thai-English)",th:"เจ้าหน้าที่บริการลูกค้า (สองภาษา ไทย-อังกฤษ)",u:J_+"64381/customer-service-support--thai"+Q_},
+    {l:"th",en:"Customer Service Representative (Mono Thai)",th:"เจ้าหน้าที่บริการลูกค้า (ใช้ภาษาไทยเป็นหลัก)",u:J_+"70006/customer-service-representative---thai--bangkok"+Q_},
+    {l:"th",en:"Guest Service Call Executive (Bilingual)",th:"เจ้าหน้าที่บริการลูกค้า Guest Service (สองภาษา)",u:J_+"51105/guest-service-call-executive---%28bilingual%29---thai---bangkok"+Q_},
+    {l:"th",en:"Content Moderator",th:"ผู้ตรวจสอบคอนเทนต์",u:J_+"49721/content-moderator---thai---bangkok"+Q_},
+    {l:"th",en:"Team Leader (Thai & English)",th:"หัวหน้าทีม (ไทยและอังกฤษ)",u:J_+"78604/customer-service-team-lead---thai"+Q_},
+    {l:"th",en:"Inside Sales Representative (Technical B2B)",th:"เจ้าหน้าที่ขาย Inside Sales (Technical B2B)",u:J_+"83902/inside-sales-representative-%28technical-b2b---industrial-solutions%29---thai-bilingual---bangkok"+Q_},
+
+    {l:"en",en:"Team Leader (Customer Service)",th:"หัวหน้าทีม (ฝ่ายบริการลูกค้า)",u:"https://careers-teleperformance.icims.com/jobs/70575/team-leader-%28cs%29---english---bangkok"+Q_},
+
+    {l:"ja",en:"Customer Service Representative",th:"เจ้าหน้าที่บริการลูกค้า",u:J_+"39527/customer-success-specialist---japanese-speaker"+Q_},
+    {l:"ja",en:"Ad Sales Specialist",th:"เจ้าหน้าที่ขายโฆษณา",u:J_+"63899/ad-sales-specialist---japanese--bangkok"+Q_},
+    {l:"ja",en:"Sales Specialist",th:"เจ้าหน้าที่ฝ่ายขาย",u:J_+"71850/%e6%97%a5%e6%9c%ac%e8%aa%9e%e5%af%be%e5%bf%9c%e3%83%bb%e3%82%bb%e3%83%bc%e3%83%ab%e3%82%b9%e3%82%b9%e3%83%9a%e3%82%b7%e3%83%a3%e3%83%aa%e3%82%b9%e3%83%88%ef%bc%88japanese-speaking-sales-specialist%ef%bc%89%e3%80%90%e3%82%a8%e3%83%90%e3%83%bc%e3%82%b0%e3%83%aa%e3%83%bc%e3%83%b3%e6%b1%82%e4%ba%ba%e3%80%91"+Q_},
+    {l:"ja",en:"Content Moderator",th:"ผู้ตรวจสอบคอนเทนต์",u:"https://jobs-teleperformance.icims.com/jobs/71802/%e3%82%b3%e3%83%b3%e3%83%86%e3%83%b3%e3%83%84%e3%83%a2%e3%83%87%e3%83%ac%e3%83%bc%e3%82%bf%e3%83%bc%e3%83%bb%e6%97%a5%e6%9c%ac%e8%aa%9e%e5%af%be%e5%bf%9c%ef%bc%88japanese-speaking-content-moderator%ef%bc%89"+Q_},
+    {l:"ja",en:"Customer Service Team Leader",th:"หัวหน้าทีมบริการลูกค้า",u:J_+"73450/customer-service-team-lead---japanese"+Q_},
+    {l:"ja",en:"Assistant Operations Manager (Customer Service)",th:"ผู้ช่วยผู้จัดการฝ่ายปฏิบัติการ (บริการลูกค้า)",u:J_+"78542/assistant-operation-manager-%28customer-service%29---japanese-speaking"+Q_},
+    {l:"ja",en:"Quality Analyst",th:"เจ้าหน้าที่ตรวจสอบคุณภาพ",u:J_+"78539/quality-analyst---japanese-speaking"+Q_},
+
+    {l:"ko",en:"Customer Service Advisor",th:"เจ้าหน้าที่ให้คำปรึกษาลูกค้า",u:J_+"51106/customer-service-advisor---korean---bangkok"+Q_},
+    {l:"ko",en:"Ad Sales Specialist",th:"เจ้าหน้าที่ขายโฆษณา",u:J_+"50060/ad-sales-specialist---korean---bangkok"+Q_},
+    {l:"ko",en:"Content Moderator",th:"ผู้ตรวจสอบคอนเทนต์",u:J_+"49720/content-moderator---korean---bangkok"+Q_},
+
+    {l:"zh",en:"Ad Sales Specialist",th:"เจ้าหน้าที่ขายโฆษณา",u:J_+"39524/ad-sales-specialist---mandarin-speaker"+Q_},
+    {l:"zh",en:"Content Moderator",th:"ผู้ตรวจสอบคอนเทนต์",u:J_+"59761/content-moderator---mandarin---thailand"+Q_},
+    {l:"zh",en:"Inside Sales Representative (Technical B2B)",th:"เจ้าหน้าที่ขาย Inside Sales (Technical B2B)",u:J_+"83901/inside-sales-representative-%28technical-b2b---industrial-solutions%29---mandarin-speaker---bangkok"+Q_},
+
+    {l:"tw",en:"Ad Sales Specialist",th:"เจ้าหน้าที่ขายโฆษณา",u:J_+"39524/ad-sales-specialist---mandarin-speaker"+Q_},
+    {l:"tw",en:"Customer Success Specialist",th:"เจ้าหน้าที่ดูแลความสำเร็จของลูกค้า",u:J_+"67038/customer-success-specialist---taiwanese--bangkok"+Q_},
+
+    {l:"vi",en:"Customer Service Advisor",th:"เจ้าหน้าที่ให้คำปรึกษาลูกค้า",u:J_+"73778/customer-service-advisor---vietnamese--bangkok"+Q_},
+    {l:"vi",en:"Content Moderator",th:"ผู้ตรวจสอบคอนเทนต์",u:J_+"49722/content-moderator---vietnamese---bangkok"+Q_},
+    {l:"vi",en:"Inside Sales Representative (Technical B2B)",th:"เจ้าหน้าที่ขาย Inside Sales (Technical B2B)",u:J_+"83898/inside-sales-representative-%28technical-b2b---industrial-solutions%29---vietnamese---bangkok"+Q_},
+    {l:"vi",en:"Interpreter",th:"ล่าม",loc:"wfh",u:J_+"49548/interpreter---vietnamese---work-from-home"+Q_},
+
+    {l:"id",en:"Content Moderator",th:"ผู้ตรวจสอบคอนเทนต์",u:J_+"49719/content-moderator---bahasa-indonesia---bangkok"+Q_},
+    {l:"id",en:"Customer Service Partner Specialist",th:"เจ้าหน้าที่ดูแลพาร์ทเนอร์ฝ่ายบริการลูกค้า",u:J_+"74572/customer-service-partner-specialist---bahasa-indonesia---bangkok"+Q_},
+
+    {l:"ms",en:"Content Moderator",th:"ผู้ตรวจสอบคอนเทนต์",u:J_+"59762/content-moderator---bahasa-malaysia--thailand"+Q_},
+
+    {l:"tl",en:"Content Moderator",th:"ผู้ตรวจสอบคอนเทนต์",u:J_+"59760/content-moderator---tagalog---thailand"+Q_}
+  ];
+
+  /* =========================================================
      THAI TRANSLATIONS  (English baseline lives in the HTML)
      Have a native Thai speaker proof these before launch.
   ========================================================= */
@@ -944,21 +968,6 @@ body[data-lang="th"] .disc{line-height:1.65}
     s3_h:"ตำแหน่งที่<em>เปิดรับ</em>",
     s3_lede:"ฝึกอบรมเต็มรูปแบบ สมัครได้ใน 5 นาที",
     roles_all:"ดูตำแหน่งงานทั้งหมดที่ศูนย์รวมงานของเรา",
-    r1_ttl:"<div class='name'>เจ้าหน้าที่ฝ่ายบริการลูกค้า</div><div class='sub'><span class='ms'>translate</span>ภาษาไทย · <span class='ms'>location_on</span>กรุงเทพฯ</div>",
-    r1_tag:"แชท &amp; โทร",
-    r1_body:"<p>ให้บริการลูกค้าภาษาไทยให้กับแบรนด์ระดับโลก ผ่านแชท อีเมล และโทรศัพท์</p><div class='role-pay'><span class='ms'>payments</span>เงินเดือนระบุในประกาศรับสมัคร <span class='det'>— ยืนยันเป็นลายลักษณ์อักษรในจดหมายเสนองาน</span></div><div class='role-perks'><span><span class='ms'>health_and_safety</span>ประกันสุขภาพ</span><span><span class='ms'>school</span>ฝึกอบรม</span><span><span class='ms'>trending_up</span>ก้าวหน้า</span></div><a class='apply' href='https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thai' target='_blank' rel='noopener'>สมัครเลย →</a>",
-    r2_ttl:"<div class='name'>เจ้าหน้าที่ฝ่ายสนับสนุนทางเทคนิค</div><div class='sub'><span class='ms'>schedule</span>ภาษาไทย · ทำงานเป็นกะ · <span class='ms'>location_on</span>กรุงเทพฯ</div>",
-    r2_tag:"ทำงานเป็นกะ",
-    r2_body:"<p>สนับสนุนทางเทคนิคด่านแรกเป็นภาษาไทยให้บริการสตรีมมิงระดับโลก แก้ปัญหาแอปและอุปกรณ์</p><div class='role-pay'><span class='ms'>payments</span>เงินเดือนระบุในประกาศรับสมัคร <span class='det'>— ยืนยันเป็นลายลักษณ์อักษรในจดหมายเสนองาน</span></div><div class='role-perks'><span><span class='ms'>health_and_safety</span>ประกันสุขภาพ</span><span><span class='ms'>school</span>ฝึกอบรม</span><span><span class='ms'>devices</span>เทคโนโลยี</span></div><a class='apply' href='https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thai' target='_blank' rel='noopener'>สมัครเลย →</a>",
-    r3_ttl:"<div class='name'>เจ้าหน้าที่ตรวจสอบเนื้อหา</div><div class='sub'><span class='ms'>translate</span>ภาษาไทย · <span class='ms'>location_on</span>กรุงเทพฯ</div>",
-    r3_tag:"ดูแลสุขภาวะ",
-    r3_body:"<p>ตรวจสอบเนื้อหาภาษาไทยให้แพลตฟอร์มโซเชียลระดับโลก ดูแลให้เป็นไปตามแนวทางชุมชน</p><div class='role-pay'><span class='ms'>payments</span>เงินเดือนระบุในประกาศรับสมัคร <span class='det'>— มีการดูแลสุขภาวะสำหรับตำแหน่งนี้</span></div><div class='role-perks'><span><span class='ms'>psychology</span>สุขภาวะ</span><span><span class='ms'>health_and_safety</span>ประกันสุขภาพ</span><span><span class='ms'>trending_up</span>ก้าวหน้า</span></div><a class='apply' href='https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thai' target='_blank' rel='noopener'>สมัครเลย →</a>",
-    r4_ttl:"<div class='name'>เจ้าหน้าที่ดูแลประสบการณ์ลูกค้า</div><div class='sub'><span class='ms'>verified</span>ภาษาอังกฤษ · ไม่ต้องมีประสบการณ์ · <span class='ms'>location_on</span>กรุงเทพฯ</div>",
-    r4_tag:"ระดับเริ่มต้น",
-    r4_body:"<p>ดูแลลูกค้าที่ใช้ภาษาอังกฤษ ก้าวแรกของอาชีพที่ลงตัว — เราฝึกให้คุณตั้งแต่ต้น</p><div class='role-pay'><span class='ms'>payments</span>เงินเดือนระบุในประกาศรับสมัคร <span class='det'>— รับนักศึกษาจบใหม่ มีการฝึกอบรมให้</span></div><div class='role-perks'><span><span class='ms'>school</span>ฝึกอบรม</span><span><span class='ms'>health_and_safety</span>ประกันสุขภาพ</span><span><span class='ms'>diversity_3</span>ระดับโลก</span></div><a class='apply' href='https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=english' target='_blank' rel='noopener'>สมัครเลย →</a>",
-    r5_ttl:"<div class='name'>บริการลูกค้าสองภาษา</div><div class='sub'><span class='ms'>translate</span>ไทย + อังกฤษ · <span class='ms'>location_on</span>กรุงเทพฯ</div>",
-    r5_tag:"สองภาษา",
-    r5_body:"<p>ดูแลลูกค้าทั้งภาษาไทยและอังกฤษให้แบรนด์ระดับโลก บริการระดับพรีเมียมสำหรับลูกค้าคนสำคัญ</p><div class='role-pay'><span class='ms'>payments</span>เงินเดือนระบุในประกาศรับสมัคร <span class='det'>— ยืนยันเป็นลายลักษณ์อักษรในจดหมายเสนองาน</span></div><div class='role-perks'><span><span class='ms'>badge</span>สนับสนุนวีซ่า</span><span><span class='ms'>health_and_safety</span>ประกันสุขภาพ</span><span><span class='ms'>trending_up</span>ก้าวหน้า</span></div><a class='apply' href='https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand' target='_blank' rel='noopener'>สมัครเลย →</a>",
 
     s4_brand:"สวัสดิการ",
     s4_head_r:"§ สิ่งที่คุณจะได้รับ",
@@ -1066,6 +1075,30 @@ body[data-lang="th"] .disc{line-height:1.65}
   function safeGet(k){try{return localStorage.getItem(k);}catch(e){return null;}}
   function safeSet(k,v){try{localStorage.setItem(k,v);}catch(e){}}
 
+  /* roles are data-driven, so they are re-rendered on every language switch
+     rather than going through the [data-i18n] innerHTML swap */
+  function renderRoles(lang){
+    var box=document.getElementById('roles'); if(!box) return;
+    var th=(lang==='th'), out=[];
+    JOB_LANGS.forEach(function(L){
+      var rows=JOBS.filter(function(j){return j.l===L.k;});
+      if(!rows.length) return;
+      var h='<div class="rgrp"><div class="rgrp-h"><span class="ms">translate</span>'+
+            (th?L.th:L.en)+'<span class="n">'+rows.length+'</span></div>';
+      rows.forEach(function(j){
+        var wfh=(j.loc==='wfh');
+        h+='<a class="rrow" href="'+j.u+'" target="_blank" rel="noopener">'+
+             '<span class="rn">'+(th?j.th:j.en)+'</span>'+
+             '<span class="rl'+(wfh?' wfh':'')+'">'+
+               '<span class="ms">'+(wfh?'home_work':'location_on')+'</span>'+
+               (wfh?(th?'ทำงานจากที่บ้าน':'Work From Home'):(th?'กรุงเทพฯ':'Bangkok'))+
+             '</span><span class="go">arrow_forward</span></a>';
+      });
+      out.push(h+'</div>');
+    });
+    box.innerHTML=out.join('');
+  }
+
   function applyLang(lang){
     document.body.setAttribute('data-lang',lang);
     document.documentElement.setAttribute('lang',lang);
@@ -1082,6 +1115,7 @@ body[data-lang="th"] .disc{line-height:1.65}
       var lbl=d.querySelector('.lbl');
       if(lbl) lbl.textContent=(lang==='th'?(screens[idx].dataset.labelTh||screens[idx].dataset.label):screens[idx].dataset.label);
     });
+    renderRoles(lang);
     safeSet('tp_lang',lang);
   }
 
