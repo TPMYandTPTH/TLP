@@ -173,9 +173,6 @@ body[data-lang="th"] .fab-btn{font-family:'Noto Sans Thai',var(--display)}
 .fab-btn .ms{font-size:20px}
 .fab-line{background:#06C755}
 .fab-line:hover{filter:brightness(1.06)}
-.fab-apply{background:var(--pink)}
-.fab-apply:hover{background:var(--pink-2)}
-.fab-apply::before{content:"";width:8px;height:8px;border-radius:50%;background:#fff;animation:pulse 1.4s infinite}
 .fab-top{width:44px;height:44px;border-radius:50%;background:#fff;color:var(--slate);border:1px solid var(--line-2);
   box-shadow:0 8px 20px rgba(75,76,106,.18);display:grid;place-items:center;transition:background .2s,color .2s,transform .18s}
 .fab-top .ms{font-size:22px}
@@ -598,7 +595,7 @@ body[data-lang="th"] .disc{line-height:1.65}
           <span class="ms">volunteer_activism</span>
           <div class="k" data-i18n="b7_k">Boost your income — refer a friend</div>
           <div class="v"><span data-i18n="b7_v1">Know someone great? When a friend you refer joins and passes probation, you earn up to</span> <b class="refer-amt" id="refAmt">฿40,000</b><span data-i18n="b7_v2">— depending on language and nationality, paid straight to you.</span></div>
-          <a class="refer-link" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="b7_cta">Refer a friend</span> <span class="ms" aria-hidden="true">arrow_forward</span></a>
+          <a class="refer-link" href="https://www.tp.com/en-th/locations/thailand/" target="_blank" rel="noopener"><span data-i18n="b7_cta">Refer a friend</span> <span class="ms" aria-hidden="true">arrow_forward</span></a>
         </div>
       </div>
     </div>
@@ -617,7 +614,7 @@ body[data-lang="th"] .disc{line-height:1.65}
         <div class="step" data-i18n="p4"><div class="no">4</div><div class="st">Welcome</div><div class="sd">Written offer, work permit support and onboarding.</div></div>
       </div>
       <div class="cta-zone enter">
-        <a class="btn btn-primary" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="cta_start">Start your application</span> <span class="arr">→</span></a>
+        <a class="btn btn-primary" href="https://www.tp.com/en-th/locations/thailand/" target="_blank" rel="noopener"><span data-i18n="cta_start">Start your application</span> <span class="arr">→</span></a>
       </div>
     </div>
   </section>
@@ -650,9 +647,9 @@ body[data-lang="th"] .disc{line-height:1.65}
         </div>
         <div class="panel">
           <h3 data-i18n="m4_h"><span class="ms">send</span>Apply online</h3>
-          <div class="detail" data-i18n="m4_d1">Ready now? Submit your application directly — it takes about 5 minutes.</div>
+          <div class="detail" data-i18n="m4_d1">Ready now? Browse every opening on the official TP Thailand site.</div>
           <div class="cta-row" style="margin-top:12px">
-            <a class="btn-ghost" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span class="ms">open_in_new</span><span data-i18n="m4_cta">Apply on iCIMS</span></a>
+            <a class="btn-ghost" href="https://www.tp.com/en-th/locations/thailand/" target="_blank" rel="noopener"><span class="ms">open_in_new</span><span data-i18n="m4_cta">TP Thailand careers</span></a>
           </div>
         </div>
       </div>
@@ -775,7 +772,7 @@ body[data-lang="th"] .disc{line-height:1.65}
 
       <div class="cta-zone enter">
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener"><span data-i18n="cta_apply">Apply now</span> <span class="arr">→</span></a>
+          <a class="btn btn-primary" href="https://www.tp.com/en-th/locations/thailand/" target="_blank" rel="noopener"><span data-i18n="cta_apply">Apply now</span> <span class="arr">→</span></a>
           <a class="btn-ghost" id="lpHub" href="https://tpmyandtpth.github.io/LP/" target="_blank" rel="noopener"><span class="ms">grid_view</span><span data-i18n="cta_all">Browse all roles</span></a>
           <a class="btn-ghost" href="https://line.me/R/ti/p/@286nmdsd" target="_blank" rel="noopener"><span class="ms">chat</span><span data-i18n="cta_chat2">Chat on LINE</span></a>
         </div>
@@ -815,9 +812,6 @@ body[data-lang="th"] .disc{line-height:1.65}
   </a>
   <div class="fab-row">
     <button class="fab-top" id="fabTop" aria-label="Back to top" title="Back to top"><span class="ms">arrow_upward</span></button>
-    <a class="fab-btn fab-apply" href="https://careerseng-teleperformance.icims.com/jobs/search?ss=1&amp;searchKeyword=thailand" target="_blank" rel="noopener">
-      <span data-i18n="fab">Apply now</span><span class="ms" aria-hidden="true">arrow_forward</span>
-    </a>
   </div>
 </div>
 
@@ -838,8 +832,9 @@ body[data-lang="th"] .disc{line-height:1.65}
      Leave a value as "" to hide that social icon entirely.
   ========================================================= */
   var CFG={
-    // Apply / job search (iCIMS)
-    APPLY:"https://careerseng-teleperformance.icims.com/jobs/search?ss=1&searchKeyword=thailand",
+    // Apply / careers destination. Individual postings are linked from JOBS above;
+    // these general "apply" CTAs point at the official TP Thailand site.
+    APPLY:"https://www.tp.com/en-th/locations/thailand/",
     // LP hub — landing-page hub where ALL jobs live (used on the "Ready to start" buttons)
     LP_HUB:"https://tpmyandtpth.github.io/LP/",
     // LINE quick-apply / chat bot — the floating "Chat on LINE" button + every "Chat on LINE" link.
@@ -1006,8 +1001,8 @@ body[data-lang="th"] .disc{line-height:1.65}
     m3_d2:"กรุงเทพฯ · โดยนัดหมาย",
     m3_b1:"เรซูเม่", m3_b2:"บัตรประชาชน", m3_b3:"วุฒิการศึกษา",
     m4_h:"<span class='ms'>send</span>สมัครออนไลน์",
-    m4_d1:"พร้อมแล้ว? ส่งใบสมัครได้เลย ใช้เวลาประมาณ 5 นาที",
-    m4_cta:"สมัครทาง iCIMS",
+    m4_d1:"พร้อมแล้ว? ดูตำแหน่งงานทั้งหมดได้ที่เว็บไซต์ทางการของ TP ประเทศไทย",
+    m4_cta:"เว็บไซต์งานของ TP ประเทศไทย",
 
     b7_k:"เพิ่มรายได้ — แนะนำเพื่อน",
     b7_v1:"รู้จักคนเก่งๆ ไหม? เมื่อเพื่อนที่คุณแนะนำเข้าทำงานและผ่านช่วงทดลองงาน คุณรับสูงสุด",
@@ -1057,7 +1052,6 @@ body[data-lang="th"] .disc{line-height:1.65}
     foot_also:"มีภาษาอื่น",
     foot_legal:"TP (เดิมชื่อ Teleperformance) เป็นบริษัทผู้ให้บริการดิจิทัลทางธุรกิจระดับโลก ครอบคลุมกว่า 100 ประเทศ และ 170 ภาษา<br>© 2026 TP (Teleperformance SE) สงวนลิขสิทธิ์",
     foot_disc:"หน้านี้เป็นข้อมูลภาพรวม เงื่อนไขอาจแตกต่างกันตามโครงการ / ภูมิภาค / กฎระเบียบ เงื่อนไขสุดท้ายยืนยันในจดหมายเสนองานและสัญญาจ้างงาน",
-    fab:"สมัครเลย",
     fab_line:"แชททาง LINE"
   };
 
@@ -1283,7 +1277,7 @@ body[data-lang="th"] .disc{line-height:1.65}
   wire("a[href*='youtube.com']",CFG.YOUTUBE);
   wire("a[href*='linkedin.com']",CFG.LINKEDIN);
   wire("a[href*='tpmyandtpth.github.io/LP']",CFG.LP_HUB);
-  var fabApply=document.querySelector('.fab-apply'); if(fabApply) fabApply.href=CFG.APPLY;
+  wire("a[href*='tp.com/en-th']",CFG.APPLY);
   var refAmt=document.getElementById('refAmt'); if(refAmt) refAmt.textContent=CFG.REFERRAL_MAX;
   var lpHub=document.getElementById('lpHub'); if(lpHub) lpHub.href=CFG.LP_HUB;
   // sync the small handle text under each social card in the Follow row
